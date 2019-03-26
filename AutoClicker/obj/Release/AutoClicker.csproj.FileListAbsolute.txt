@@ -1,0 +1,15 @@
+D:\AutoClicker\bin\Release\AutoClicker.exe.config
+D:\AutoClicker\bin\Release\AutoClicker.exe
+D:\AutoClicker\bin\Release\AutoClicker.pdb
+D:\AutoClicker\obj\Release\AutoClicker.AutoClicker.resources
+D:\AutoClicker\obj\Release\AutoClicker.Properties.Resources.resources
+D:\AutoClicker\obj\Release\AutoClicker.csproj.GenerateResource.cache
+D:\AutoClicker\obj\Release\AutoClicker.csproj.CoreCompileInputs.cache
+D:\AutoClicker\obj\Release\AutoClicker.exe
+D:\AutoClicker\obj\Release\AutoClicker.pdb
+D:\AutoClicker\bin\Release\AutoClicker.exe.manifest
+D:\AutoClicker\bin\Release\AutoClicker.application
+D:\AutoClicker\obj\Release\AutoClicker.csprojAssemblyReference.cache
+D:\AutoClicker\obj\Release\AutoClicker.TrustInfo.xml
+D:\AutoClicker\obj\Release\AutoClicker.exe.manifest
+D:\AutoClicker\obj\Release\AutoClicker.application
