@@ -167,9 +167,9 @@
             // 
             // modeButton
             // 
-            this.modeButton.Location = new System.Drawing.Point(152, 75);
+            this.modeButton.Location = new System.Drawing.Point(152, 71);
             this.modeButton.Name = "modeButton";
-            this.modeButton.Size = new System.Drawing.Size(65, 22);
+            this.modeButton.Size = new System.Drawing.Size(65, 30);
             this.modeButton.TabIndex = 15;
             this.modeButton.Text = "Mode";
             this.modeButton.UseVisualStyleBackColor = true;
