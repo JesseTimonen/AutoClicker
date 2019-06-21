@@ -8,6 +8,7 @@ namespace AutoClicker
     public partial class AutoClicker : Form
     {
         private KeyHandler keyHandler;
+        private bool isActive = false;
         private string mode = "mouse";
         private bool isFastMode = true;
         private double speed;
@@ -26,7 +27,7 @@ namespace AutoClicker
 
         private void AutoClicker_FormClosing(Object sender, FormClosingEventArgs e)
         {
-            keyHandler.Unregiser();
+            keyHandler.Unregister();
         }
 
 
@@ -77,7 +78,7 @@ namespace AutoClicker
             End();
         }
 
-        private void MouseButton_Click(object sender, EventArgs e)
+        private void mouseButton_Click(object sender, EventArgs e)
         {
             patternLabel.Visible = false;
             patternTextbox.Visible = false;
@@ -90,7 +91,7 @@ namespace AutoClicker
             End();
         }
 
-        private void KeyboardButton_Click(object sender, EventArgs e)
+        private void keyboardButton_Click(object sender, EventArgs e)
         {
             patternLabel.Visible = true;
             patternTextbox.Visible = true;
@@ -124,13 +125,13 @@ namespace AutoClicker
 
         private void HandleHotkey()
         {
-            if (statusLabel.Text == "OFF")
+            if (isActive)
             {
-                Start();
+                End();
             }
             else
             {
-                End();
+                Start();
             }
         }
 
@@ -154,11 +155,7 @@ namespace AutoClicker
             else
             {
                 step++;
-
-                if (step >= pattern.Length)
-                {
-                    step = 0;
-                }
+                if (step >= pattern.Length){ step = 0; }
 
                 try
                 {
@@ -185,6 +182,11 @@ namespace AutoClicker
             try
             {
                 speed = Convert.ToDouble(speedTextbox.Text.Replace('.', ','));
+
+                if (speed <= 0) return;
+                speed = (speed > 60) ? 60 : speed;
+
+                speedTextbox.Text = speed.ToString();
             }
             catch (Exception)
             {
@@ -192,55 +194,36 @@ namespace AutoClicker
                 return;
             }
 
-            if (patternTextbox.Text == "" && mode == "keyboard")
+            if (mode == "keyboard" && patternTextbox.Text == "")
             {
                 return;
-            }
-            if (speed <= 0)
-            {
-                return;
-            }
-            else if (speed > 60)
-            {
-                speed = 60;
             }
 
-            speedTextbox.Text = speed.ToString();
 
             startButton.Enabled = false;
             modeButton.Enabled = false;
             endButton.Enabled = true;
             iterationTimer.Enabled = true;
             timeTimer.Enabled = true;
-
+            isActive = true;
             statusLabel.ForeColor = Color.Green;
             statusLabel.Text = "ON";
             ResetStatistics();
 
 
             // Set the timer intervals using user's time settings
-            if (mode == "mouse")
+            if (isFastMode)
             {
-                if (isFastMode)
-                {
-                    iterationTimer.Interval = (int)Math.Ceiling(1000 / speed);
-                }
-                else
-                {
-                    iterationTimer.Interval = (int)Math.Ceiling(1000 * speed);
-                }
+                iterationTimer.Interval = (int)Math.Ceiling(1000 / speed);
             }
             else
             {
-                if (isFastMode)
-                {
-                    iterationTimer.Interval = (int)Math.Ceiling(1000 / speed);
-                }
-                else
-                {
-                    iterationTimer.Interval = (int)Math.Ceiling(1000 * speed);
-                }
+                iterationTimer.Interval = (int)Math.Ceiling(1000 * speed);
+            }
 
+            // Additional keyboard initialization
+            if (mode == "keyboard")
+            {
                 // Remove "{" and "}" from the pattern
                 patternTextbox.Text = patternTextbox.Text.Replace("{", "").Replace("}", "");
 
@@ -269,7 +252,7 @@ namespace AutoClicker
             endButton.Enabled = false;
             iterationTimer.Enabled = false;
             timeTimer.Enabled = false;
-
+            isActive = false;
             statusLabel.ForeColor = Color.Red;
             statusLabel.Text = "OFF";
         }
@@ -293,14 +276,12 @@ namespace AutoClicker
     }
 
 
-    // =============================== HOTKEY CONSTANTS ============================== \\
+    // ================================ HOTKEY HANDLER =============================== \\
     public static class Constants
     {
         public const int WM_HOTKEY_MSG_ID = 0x0312;
     }
 
-
-    // ================================ HOTKEY HANDLER =============================== \\
     public class KeyHandler
     {
         [DllImport("user32.dll")]
@@ -330,7 +311,7 @@ namespace AutoClicker
             return RegisterHotKey(hWnd, id, 0, key);
         }
 
-        public bool Unregiser()
+        public bool Unregister()
         {
             return UnregisterHotKey(hWnd, id);
         }

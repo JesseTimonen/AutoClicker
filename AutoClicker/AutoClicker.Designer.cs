@@ -22,8 +22,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.MouseButton = new System.Windows.Forms.Button();
-            this.KeyboardButton = new System.Windows.Forms.Button();
+            this.mouseButton = new System.Windows.Forms.Button();
+            this.keyboardButton = new System.Windows.Forms.Button();
             this.startButton = new System.Windows.Forms.Button();
             this.endButton = new System.Windows.Forms.Button();
             this.timeLabel = new System.Windows.Forms.Label();
@@ -41,25 +41,25 @@
             this.patternSeperatorTextbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // MouseButton
+            // mouseButton
             // 
-            this.MouseButton.Location = new System.Drawing.Point(0, -1);
-            this.MouseButton.Name = "MouseButton";
-            this.MouseButton.Size = new System.Drawing.Size(92, 36);
-            this.MouseButton.TabIndex = 0;
-            this.MouseButton.Text = "Mouse";
-            this.MouseButton.UseVisualStyleBackColor = true;
-            this.MouseButton.Click += new System.EventHandler(this.MouseButton_Click);
+            this.mouseButton.Location = new System.Drawing.Point(0, -1);
+            this.mouseButton.Name = "mouseButton";
+            this.mouseButton.Size = new System.Drawing.Size(92, 36);
+            this.mouseButton.TabIndex = 0;
+            this.mouseButton.Text = "Mouse";
+            this.mouseButton.UseVisualStyleBackColor = true;
+            this.mouseButton.Click += new System.EventHandler(this.mouseButton_Click);
             // 
-            // KeyboardButton
+            // keyboardButton
             // 
-            this.KeyboardButton.Location = new System.Drawing.Point(89, -1);
-            this.KeyboardButton.Name = "KeyboardButton";
-            this.KeyboardButton.Size = new System.Drawing.Size(92, 36);
-            this.KeyboardButton.TabIndex = 1;
-            this.KeyboardButton.Text = "Keyboard";
-            this.KeyboardButton.UseVisualStyleBackColor = true;
-            this.KeyboardButton.Click += new System.EventHandler(this.KeyboardButton_Click);
+            this.keyboardButton.Location = new System.Drawing.Point(89, -1);
+            this.keyboardButton.Name = "keyboardButton";
+            this.keyboardButton.Size = new System.Drawing.Size(92, 36);
+            this.keyboardButton.TabIndex = 1;
+            this.keyboardButton.Text = "Keyboard";
+            this.keyboardButton.UseVisualStyleBackColor = true;
+            this.keyboardButton.Click += new System.EventHandler(this.keyboardButton_Click);
             // 
             // startButton
             // 
@@ -215,8 +215,8 @@
             this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.endButton);
             this.Controls.Add(this.startButton);
-            this.Controls.Add(this.KeyboardButton);
-            this.Controls.Add(this.MouseButton);
+            this.Controls.Add(this.keyboardButton);
+            this.Controls.Add(this.mouseButton);
             this.Name = "AutoClicker";
             this.Text = "AutoClicker";
             this.ResumeLayout(false);
@@ -225,8 +225,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button MouseButton;
-        private System.Windows.Forms.Button KeyboardButton;
+        private System.Windows.Forms.Button mouseButton;
+        private System.Windows.Forms.Button keyboardButton;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Button endButton;
         private System.Windows.Forms.Label timeLabel;
