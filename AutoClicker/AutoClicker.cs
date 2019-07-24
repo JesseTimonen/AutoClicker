@@ -17,6 +17,7 @@ namespace AutoClicker
         private int step;
         string[] pattern;
 
+
         public AutoClicker()
         {
             InitializeComponent();
@@ -24,6 +25,7 @@ namespace AutoClicker
             keyHandler = new KeyHandler(Keys.PageDown, this);
             keyHandler.Register();
         }
+
 
         private void AutoClicker_FormClosing(Object sender, FormClosingEventArgs e)
         {
@@ -39,6 +41,7 @@ namespace AutoClicker
             timeLabel.Text = "Time: 0 seconds";
             iterationLabel.Text = "Iterations: 0";
         }
+
 
         private void UpdateTexts()
         {
@@ -73,10 +76,12 @@ namespace AutoClicker
             Start();
         }
 
+
         private void endButton_Click(object sender, EventArgs e)
         {
             End();
         }
+
 
         private void mouseButton_Click(object sender, EventArgs e)
         {
@@ -91,6 +96,7 @@ namespace AutoClicker
             End();
         }
 
+
         private void keyboardButton_Click(object sender, EventArgs e)
         {
             patternLabel.Visible = true;
@@ -103,6 +109,7 @@ namespace AutoClicker
             ResetStatistics();
             End();
         }
+
 
         private void modeButton_Click(object sender, EventArgs e)
         {
@@ -123,6 +130,7 @@ namespace AutoClicker
             base.WndProc(ref m);
         }
 
+
         private void HandleHotkey()
         {
             if (isActive)
@@ -142,6 +150,7 @@ namespace AutoClicker
             timeCount++;
             timeLabel.Text = $"Time: {timeCount.ToString()} seconds";
         }
+
 
         private void iterationTimer_Tick(object sender, EventArgs e)
         {
@@ -281,6 +290,7 @@ namespace AutoClicker
     {
         public const int WM_HOTKEY_MSG_ID = 0x0312;
     }
+
 
     public class KeyHandler
     {
