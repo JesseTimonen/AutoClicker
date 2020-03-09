@@ -1,6 +1,6 @@
 # Auto Clicker
 
-Auto Clicker is an application which automates mouse clicks, this application also supports repeating keyborad patterns.
+Auto Clicker is an application which automates mouse clicks, this application also supports repeating keyboard patterns.
 Hotkey to turn autoclicker on/off is 'PageDown'.
 
 
