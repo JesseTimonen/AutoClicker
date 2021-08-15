@@ -1,11 +1,10 @@
 # Auto Clicker
 
-Auto Clicker is an application which can be used to automate mouse clicks,
-this application also supports repeating keyboard patterns.
+Auto Clicker is an application which allows you to automate mouse clicks, create macros,
+create hotkeys for mouse clicks and automate keyboard inputs.
 
 
 ## How to Use
 
-To open the application run the executable (AutoClicker.exe). You may delete all other files, they are not required to run the executable.
-
-Hotkey to turn autoclicker on/off is 'PageDown'.
+To open the application just run the executable (AutoClicker.exe).
+You may delete all other files, they are not required to run the executable.
