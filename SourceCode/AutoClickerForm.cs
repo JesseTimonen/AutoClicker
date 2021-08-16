@@ -116,7 +116,7 @@ namespace AutoClicker
             newHotkeyKeyHandler = new KeyHandler(KeyHandler.ConvertToFKey(settings["CreateHotkeyHotkey"]), 10003, this);
             startAutoClickerKeyHandler = new KeyHandler(KeyHandler.ConvertToFKey(settings["StartAutoClickerHotkey"]), 10004, this);
             stopAutoClickerKeyHandler = new KeyHandler(KeyHandler.ConvertToFKey(settings["StopAutoClickerHotkey"]), 10005, this);
-            startAutoKeyboardKeyHandler = new KeyHandler(KeyHandler.ConvertToFKey(settings["StartAutoKeyboardHotkey"]), 100006, this);
+            startAutoKeyboardKeyHandler = new KeyHandler(KeyHandler.ConvertToFKey(settings["StartAutoKeyboardHotkey"]), 10006, this);
             stopAutoKeyboardKeyHandler = new KeyHandler(KeyHandler.ConvertToFKey(settings["StopAutoKeyboardHotkey"]), 10007, this);
             startMacroKeyHandler.Register();
             stopMacroKeyHandler.Register();
@@ -305,6 +305,15 @@ namespace AutoClicker
             else
             {
                 NewMacroButton.Text = "Record New Macro\n(Hotkey: " + settings["StartMacroHotkey"] + ")";
+            }
+
+            if (settings["StartAutoKeyboardHotkey"].ToLower() == "already in use" || settings["StartAutoKeyboardHotkey"].ToLower() == "none")
+            {
+                ToggleAutoKeyboardButton.Text = "Start AutoKeyboard";
+            }
+            else
+            {
+                ToggleAutoKeyboardButton.Text = "Start AutoKeyboard\n(Hotkey: " + settings["StartAutoKeyboardHotkey"] + ")";
             }
         }
         // ========================================= End Miscellaneous ========================================= \\

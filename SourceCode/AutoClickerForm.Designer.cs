@@ -47,8 +47,8 @@ namespace AutoClicker
             this.NewMacroButton = new System.Windows.Forms.Button();
             this.ApplicationTitle = new System.Windows.Forms.Label();
             this.HotkeysPanel = new System.Windows.Forms.Panel();
-            this.HotkeyToAutoKeyboardButton = new System.Windows.Forms.Button();
-            this.HotkeyToAutoClickerButton = new System.Windows.Forms.Button();
+            this.HotkeysToAutoKeyboardButton = new System.Windows.Forms.Button();
+            this.HotkeysToAutoClickerButton = new System.Windows.Forms.Button();
             this.HotkeysSavedFeedbackLabel = new System.Windows.Forms.Label();
             this.HotkeysGuidePanel = new System.Windows.Forms.Panel();
             this.HotkeyGuideLabel2 = new System.Windows.Forms.Label();
@@ -132,6 +132,9 @@ namespace AutoClicker
             this.AutoClickerStatusLabel = new System.Windows.Forms.Label();
             this.AutoClickerTimer = new System.Windows.Forms.Timer(this.components);
             this.AutoKeyboardPanel = new System.Windows.Forms.Panel();
+            this.AutoKeyboardGuidePanel = new System.Windows.Forms.Panel();
+            this.AutoKeyboardGuideLabel = new System.Windows.Forms.Label();
+            this.AutoKeyboardGuideTitle = new System.Windows.Forms.Label();
             this.AutoKeyboardPatternSeperatorTextbox = new System.Windows.Forms.TextBox();
             this.AutoKeyboardPatternSeperatorLabel = new System.Windows.Forms.Label();
             this.AutoKeyboardPatternLabel = new System.Windows.Forms.Label();
@@ -158,6 +161,7 @@ namespace AutoClicker
             this.AutoClickerPanel.SuspendLayout();
             this.LimitAutoClickerPanel.SuspendLayout();
             this.AutoKeyboardPanel.SuspendLayout();
+            this.AutoKeyboardGuidePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // MacroToMacroButton
@@ -344,7 +348,7 @@ namespace AutoClicker
             this.SavedMacrosPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(54)))));
             this.SavedMacrosPanel.Location = new System.Drawing.Point(0, 110);
             this.SavedMacrosPanel.Name = "SavedMacrosPanel";
-            this.SavedMacrosPanel.Size = new System.Drawing.Size(1024, 330);
+            this.SavedMacrosPanel.Size = new System.Drawing.Size(995, 330);
             this.SavedMacrosPanel.TabIndex = 0;
             // 
             // NewMacroButton
@@ -375,8 +379,8 @@ namespace AutoClicker
             // HotkeysPanel
             // 
             this.HotkeysPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(54)))));
-            this.HotkeysPanel.Controls.Add(this.HotkeyToAutoKeyboardButton);
-            this.HotkeysPanel.Controls.Add(this.HotkeyToAutoClickerButton);
+            this.HotkeysPanel.Controls.Add(this.HotkeysToAutoKeyboardButton);
+            this.HotkeysPanel.Controls.Add(this.HotkeysToAutoClickerButton);
             this.HotkeysPanel.Controls.Add(this.HotkeysSavedFeedbackLabel);
             this.HotkeysPanel.Controls.Add(this.HotkeysGuidePanel);
             this.HotkeysPanel.Controls.Add(this.SaveHotkeysButton);
@@ -393,33 +397,33 @@ namespace AutoClicker
             this.HotkeysPanel.TabIndex = 0;
             this.HotkeysPanel.Visible = false;
             // 
-            // HotkeyToAutoKeyboardButton
+            // HotkeysToAutoKeyboardButton
             // 
-            this.HotkeyToAutoKeyboardButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.HotkeyToAutoKeyboardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HotkeyToAutoKeyboardButton.ForeColor = System.Drawing.Color.White;
-            this.HotkeyToAutoKeyboardButton.Location = new System.Drawing.Point(450, 0);
-            this.HotkeyToAutoKeyboardButton.Name = "HotkeyToAutoKeyboardButton";
-            this.HotkeyToAutoKeyboardButton.Size = new System.Drawing.Size(150, 60);
-            this.HotkeyToAutoKeyboardButton.TabIndex = 0;
-            this.HotkeyToAutoKeyboardButton.TabStop = false;
-            this.HotkeyToAutoKeyboardButton.Text = "Auto Keyboard";
-            this.HotkeyToAutoKeyboardButton.UseVisualStyleBackColor = false;
-            this.HotkeyToAutoKeyboardButton.Click += new System.EventHandler(this.HotkeyToKeyboardButton_Click);
+            this.HotkeysToAutoKeyboardButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.HotkeysToAutoKeyboardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HotkeysToAutoKeyboardButton.ForeColor = System.Drawing.Color.White;
+            this.HotkeysToAutoKeyboardButton.Location = new System.Drawing.Point(450, 0);
+            this.HotkeysToAutoKeyboardButton.Name = "HotkeysToAutoKeyboardButton";
+            this.HotkeysToAutoKeyboardButton.Size = new System.Drawing.Size(150, 60);
+            this.HotkeysToAutoKeyboardButton.TabIndex = 0;
+            this.HotkeysToAutoKeyboardButton.TabStop = false;
+            this.HotkeysToAutoKeyboardButton.Text = "Auto Keyboard";
+            this.HotkeysToAutoKeyboardButton.UseVisualStyleBackColor = false;
+            this.HotkeysToAutoKeyboardButton.Click += new System.EventHandler(this.HotkeyToKeyboardButton_Click);
             // 
-            // HotkeyToAutoClickerButton
+            // HotkeysToAutoClickerButton
             // 
-            this.HotkeyToAutoClickerButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.HotkeyToAutoClickerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HotkeyToAutoClickerButton.ForeColor = System.Drawing.Color.White;
-            this.HotkeyToAutoClickerButton.Location = new System.Drawing.Point(0, 0);
-            this.HotkeyToAutoClickerButton.Name = "HotkeyToAutoClickerButton";
-            this.HotkeyToAutoClickerButton.Size = new System.Drawing.Size(150, 60);
-            this.HotkeyToAutoClickerButton.TabIndex = 0;
-            this.HotkeyToAutoClickerButton.TabStop = false;
-            this.HotkeyToAutoClickerButton.Text = "Auto Clicker";
-            this.HotkeyToAutoClickerButton.UseVisualStyleBackColor = false;
-            this.HotkeyToAutoClickerButton.Click += new System.EventHandler(this.HotkeyToAutoClickerButton_Click);
+            this.HotkeysToAutoClickerButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.HotkeysToAutoClickerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HotkeysToAutoClickerButton.ForeColor = System.Drawing.Color.White;
+            this.HotkeysToAutoClickerButton.Location = new System.Drawing.Point(0, 0);
+            this.HotkeysToAutoClickerButton.Name = "HotkeysToAutoClickerButton";
+            this.HotkeysToAutoClickerButton.Size = new System.Drawing.Size(150, 60);
+            this.HotkeysToAutoClickerButton.TabIndex = 0;
+            this.HotkeysToAutoClickerButton.TabStop = false;
+            this.HotkeysToAutoClickerButton.Text = "Auto Clicker";
+            this.HotkeysToAutoClickerButton.UseVisualStyleBackColor = false;
+            this.HotkeysToAutoClickerButton.Click += new System.EventHandler(this.HotkeyToAutoClickerButton_Click);
             // 
             // HotkeysSavedFeedbackLabel
             // 
@@ -526,7 +530,7 @@ namespace AutoClicker
             this.SavedHotkeysPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(54)))));
             this.SavedHotkeysPanel.Location = new System.Drawing.Point(0, 110);
             this.SavedHotkeysPanel.Name = "SavedHotkeysPanel";
-            this.SavedHotkeysPanel.Size = new System.Drawing.Size(600, 330);
+            this.SavedHotkeysPanel.Size = new System.Drawing.Size(662, 330);
             this.SavedHotkeysPanel.TabIndex = 0;
             // 
             // ToggleHotkeysButton
@@ -1420,6 +1424,7 @@ namespace AutoClicker
             // AutoKeyboardPanel
             // 
             this.AutoKeyboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(54)))));
+            this.AutoKeyboardPanel.Controls.Add(this.AutoKeyboardGuidePanel);
             this.AutoKeyboardPanel.Controls.Add(this.AutoKeyboardPatternSeperatorTextbox);
             this.AutoKeyboardPanel.Controls.Add(this.AutoKeyboardPatternSeperatorLabel);
             this.AutoKeyboardPanel.Controls.Add(this.AutoKeyboardPatternLabel);
@@ -1440,6 +1445,39 @@ namespace AutoClicker
             this.AutoKeyboardPanel.Size = new System.Drawing.Size(1024, 536);
             this.AutoKeyboardPanel.TabIndex = 0;
             this.AutoKeyboardPanel.Visible = false;
+            // 
+            // AutoKeyboardGuidePanel
+            // 
+            this.AutoKeyboardGuidePanel.AutoScroll = true;
+            this.AutoKeyboardGuidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(54)))));
+            this.AutoKeyboardGuidePanel.Controls.Add(this.AutoKeyboardGuideLabel);
+            this.AutoKeyboardGuidePanel.Controls.Add(this.AutoKeyboardGuideTitle);
+            this.AutoKeyboardGuidePanel.Location = new System.Drawing.Point(695, 110);
+            this.AutoKeyboardGuidePanel.Name = "AutoKeyboardGuidePanel";
+            this.AutoKeyboardGuidePanel.Size = new System.Drawing.Size(300, 330);
+            this.AutoKeyboardGuidePanel.TabIndex = 1;
+            // 
+            // AutoKeyboardGuideLabel
+            // 
+            this.AutoKeyboardGuideLabel.AutoSize = true;
+            this.AutoKeyboardGuideLabel.ForeColor = System.Drawing.Color.Silver;
+            this.AutoKeyboardGuideLabel.Location = new System.Drawing.Point(0, 50);
+            this.AutoKeyboardGuideLabel.Name = "AutoKeyboardGuideLabel";
+            this.AutoKeyboardGuideLabel.Size = new System.Drawing.Size(269, 85);
+            this.AutoKeyboardGuideLabel.TabIndex = 0;
+            this.AutoKeyboardGuideLabel.Text = "To send key inputs type the key you want\r\nto send into the pattern box.\r\n\r\nYou ca" +
+    "n send an array of inputs by\r\nseparating the keys using the separator.";
+            // 
+            // AutoKeyboardGuideTitle
+            // 
+            this.AutoKeyboardGuideTitle.AutoSize = true;
+            this.AutoKeyboardGuideTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AutoKeyboardGuideTitle.ForeColor = System.Drawing.Color.White;
+            this.AutoKeyboardGuideTitle.Location = new System.Drawing.Point(0, 20);
+            this.AutoKeyboardGuideTitle.Name = "AutoKeyboardGuideTitle";
+            this.AutoKeyboardGuideTitle.Size = new System.Drawing.Size(93, 17);
+            this.AutoKeyboardGuideTitle.TabIndex = 0;
+            this.AutoKeyboardGuideTitle.Text = "How to use:";
             // 
             // AutoKeyboardPatternSeperatorTextbox
             // 
@@ -1638,11 +1676,11 @@ namespace AutoClicker
             this.Controls.Add(this.MinimizeApplicationButton);
             this.Controls.Add(this.CloseApplicationButton);
             this.Controls.Add(this.DeletePanelParent);
-            this.Controls.Add(this.HotkeysPanel);
             this.Controls.Add(this.AutoKeyboardPanel);
             this.Controls.Add(this.AutoClickerPanel);
             this.Controls.Add(this.MacrosPanel);
             this.Controls.Add(this.SettingsPanel);
+            this.Controls.Add(this.HotkeysPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AutoClickerForm";
@@ -1668,6 +1706,8 @@ namespace AutoClicker
             this.LimitAutoClickerPanel.PerformLayout();
             this.AutoKeyboardPanel.ResumeLayout(false);
             this.AutoKeyboardPanel.PerformLayout();
+            this.AutoKeyboardGuidePanel.ResumeLayout(false);
+            this.AutoKeyboardGuidePanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1719,7 +1759,7 @@ namespace AutoClicker
         private System.Windows.Forms.Button SettingsToAutoClickerButton;
         private System.Windows.Forms.CheckBox SettingsClickWhileMovingCheckbox;
         private System.Windows.Forms.Label SettingsAutoClickerTitle;
-        private System.Windows.Forms.Button HotkeyToAutoClickerButton;
+        private System.Windows.Forms.Button HotkeysToAutoClickerButton;
         private System.Windows.Forms.Button MacroToAutoClickerButton;
         private System.Windows.Forms.Panel AutoClickerPanel;
         private System.Windows.Forms.Button AutoClickerToAutoClickerButton;
@@ -1767,7 +1807,7 @@ namespace AutoClicker
         private System.Windows.Forms.CheckBox SettingsDelayAutoClickerCheckbox;
         private System.Windows.Forms.Button AutoClickerToAutoKeyboardButton;
         private System.Windows.Forms.Button MacroToAutoKeyboardButton;
-        private System.Windows.Forms.Button HotkeyToAutoKeyboardButton;
+        private System.Windows.Forms.Button HotkeysToAutoKeyboardButton;
         private System.Windows.Forms.Button SettingsToAutoKeyboardButton;
         private System.Windows.Forms.Panel AutoKeyboardPanel;
         private System.Windows.Forms.Button AutoKeyboardToAutoClickerButton;
@@ -1792,6 +1832,9 @@ namespace AutoClicker
         private System.Windows.Forms.Label AutoKeyboardPatternLabel;
         private System.Windows.Forms.TextBox AutoKeyboardPatternTextbox;
         private System.Windows.Forms.Panel DeletePanelParent;
+        private System.Windows.Forms.Panel AutoKeyboardGuidePanel;
+        private System.Windows.Forms.Label AutoKeyboardGuideLabel;
+        private System.Windows.Forms.Label AutoKeyboardGuideTitle;
     }
 }
 
