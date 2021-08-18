@@ -119,9 +119,9 @@ namespace AutoClicker
             // Remove "{" and "}" from the pattern
             AutoKeyboardPatternTextbox.Text = AutoKeyboardPatternTextbox.Text.Replace("{", "").Replace("}", "");
 
-            if (AutoKeyboardPatternSeperatorTextbox.Text != "")
+            if (AutoKeyboardPatternSeparatorTextbox.Text != "")
             {
-                autoKeyboardPattern = AutoKeyboardPatternTextbox.Text.Split(new char[] { AutoKeyboardPatternSeperatorTextbox.Text[0] }, StringSplitOptions.RemoveEmptyEntries);
+                autoKeyboardPattern = AutoKeyboardPatternTextbox.Text.Split(new char[] { AutoKeyboardPatternSeparatorTextbox.Text[0] }, StringSplitOptions.RemoveEmptyEntries);
             }
             else
             {
@@ -144,7 +144,7 @@ namespace AutoClicker
             AutoKeyboardInputTextBox.Enabled = enable;
             AutoKeyboardModeButton.Enabled = enable;
             AutoKeyboardPatternTextbox.Enabled = enable;
-            AutoKeyboardPatternSeperatorTextbox.Enabled = enable;
+            AutoKeyboardPatternSeparatorTextbox.Enabled = enable;
             AutoKeyboardToAutoClickerButton.Enabled = enable;
             AutoKeyboardToMacroButton.Enabled = enable;
             AutoKeyboardToHotkeysButton.Enabled = enable;

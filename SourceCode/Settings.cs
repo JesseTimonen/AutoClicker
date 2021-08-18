@@ -79,7 +79,7 @@ namespace AutoClicker
                 if (hotkeysFound >= 2) { return "Already in use"; }
             }
 
-            return hotkey;
+            return hotkey.ToUpper();
         }
 
         private void SaveSettingsButton_Click(object sender, EventArgs e)

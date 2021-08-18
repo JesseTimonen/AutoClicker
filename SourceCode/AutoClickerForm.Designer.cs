@@ -135,8 +135,8 @@ namespace AutoClicker
             this.AutoKeyboardGuidePanel = new System.Windows.Forms.Panel();
             this.AutoKeyboardGuideLabel = new System.Windows.Forms.Label();
             this.AutoKeyboardGuideTitle = new System.Windows.Forms.Label();
-            this.AutoKeyboardPatternSeperatorTextbox = new System.Windows.Forms.TextBox();
-            this.AutoKeyboardPatternSeperatorLabel = new System.Windows.Forms.Label();
+            this.AutoKeyboardPatternSeparatorTextbox = new System.Windows.Forms.TextBox();
+            this.AutoKeyboardPatternSeparatorLabel = new System.Windows.Forms.Label();
             this.AutoKeyboardPatternLabel = new System.Windows.Forms.Label();
             this.AutoKeyboardPatternTextbox = new System.Windows.Forms.TextBox();
             this.AutoKeyboardModeButton = new System.Windows.Forms.Button();
@@ -270,6 +270,7 @@ namespace AutoClicker
             this.MacrosPanel.Name = "MacrosPanel";
             this.MacrosPanel.Size = new System.Drawing.Size(1024, 536);
             this.MacrosPanel.TabIndex = 0;
+            this.MacrosPanel.Visible = false;
             // 
             // MacroToAutoKeyboardButton
             // 
@@ -760,8 +761,8 @@ namespace AutoClicker
             this.SettingsFastModeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.SettingsFastModeLabel.Size = new System.Drawing.Size(335, 34);
             this.SettingsFastModeLabel.TabIndex = 0;
-            this.SettingsFastModeLabel.Text = "Records macros and does action 50 times a second\r\nCan cause issues if your comput" +
-    "er can\'t keep up";
+            this.SettingsFastModeLabel.Text = "Records macros and does action 50 times a second\r\nCan cause mistakes if your comp" +
+    "uter can\'t keep up";
             // 
             // SettingsGeneralHotkeysLabel
             // 
@@ -1143,7 +1144,6 @@ namespace AutoClicker
             this.AutoClickerPanel.Name = "AutoClickerPanel";
             this.AutoClickerPanel.Size = new System.Drawing.Size(1024, 536);
             this.AutoClickerPanel.TabIndex = 0;
-            this.AutoClickerPanel.Visible = false;
             // 
             // AutoClickerToAutoKeyboardButton
             // 
@@ -1425,8 +1425,8 @@ namespace AutoClicker
             // 
             this.AutoKeyboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(54)))));
             this.AutoKeyboardPanel.Controls.Add(this.AutoKeyboardGuidePanel);
-            this.AutoKeyboardPanel.Controls.Add(this.AutoKeyboardPatternSeperatorTextbox);
-            this.AutoKeyboardPanel.Controls.Add(this.AutoKeyboardPatternSeperatorLabel);
+            this.AutoKeyboardPanel.Controls.Add(this.AutoKeyboardPatternSeparatorTextbox);
+            this.AutoKeyboardPanel.Controls.Add(this.AutoKeyboardPatternSeparatorLabel);
             this.AutoKeyboardPanel.Controls.Add(this.AutoKeyboardPatternLabel);
             this.AutoKeyboardPanel.Controls.Add(this.AutoKeyboardPatternTextbox);
             this.AutoKeyboardPanel.Controls.Add(this.AutoKeyboardModeButton);
@@ -1479,24 +1479,24 @@ namespace AutoClicker
             this.AutoKeyboardGuideTitle.TabIndex = 0;
             this.AutoKeyboardGuideTitle.Text = "How to use:";
             // 
-            // AutoKeyboardPatternSeperatorTextbox
+            // AutoKeyboardPatternSeparatorTextbox
             // 
-            this.AutoKeyboardPatternSeperatorTextbox.Location = new System.Drawing.Point(280, 250);
-            this.AutoKeyboardPatternSeperatorTextbox.Name = "AutoKeyboardPatternSeperatorTextbox";
-            this.AutoKeyboardPatternSeperatorTextbox.Size = new System.Drawing.Size(68, 22);
-            this.AutoKeyboardPatternSeperatorTextbox.TabIndex = 0;
-            this.AutoKeyboardPatternSeperatorTextbox.TabStop = false;
-            this.AutoKeyboardPatternSeperatorTextbox.Text = ",";
+            this.AutoKeyboardPatternSeparatorTextbox.Location = new System.Drawing.Point(280, 250);
+            this.AutoKeyboardPatternSeparatorTextbox.Name = "AutoKeyboardPatternSeparatorTextbox";
+            this.AutoKeyboardPatternSeparatorTextbox.Size = new System.Drawing.Size(68, 22);
+            this.AutoKeyboardPatternSeparatorTextbox.TabIndex = 0;
+            this.AutoKeyboardPatternSeparatorTextbox.TabStop = false;
+            this.AutoKeyboardPatternSeparatorTextbox.Text = ",";
             // 
-            // AutoKeyboardPatternSeperatorLabel
+            // AutoKeyboardPatternSeparatorLabel
             // 
-            this.AutoKeyboardPatternSeperatorLabel.AutoSize = true;
-            this.AutoKeyboardPatternSeperatorLabel.ForeColor = System.Drawing.Color.White;
-            this.AutoKeyboardPatternSeperatorLabel.Location = new System.Drawing.Point(280, 220);
-            this.AutoKeyboardPatternSeperatorLabel.Name = "AutoKeyboardPatternSeperatorLabel";
-            this.AutoKeyboardPatternSeperatorLabel.Size = new System.Drawing.Size(71, 17);
-            this.AutoKeyboardPatternSeperatorLabel.TabIndex = 0;
-            this.AutoKeyboardPatternSeperatorLabel.Text = "Seperator";
+            this.AutoKeyboardPatternSeparatorLabel.AutoSize = true;
+            this.AutoKeyboardPatternSeparatorLabel.ForeColor = System.Drawing.Color.White;
+            this.AutoKeyboardPatternSeparatorLabel.Location = new System.Drawing.Point(280, 220);
+            this.AutoKeyboardPatternSeparatorLabel.Name = "AutoKeyboardPatternSeparatorLabel";
+            this.AutoKeyboardPatternSeparatorLabel.Size = new System.Drawing.Size(71, 17);
+            this.AutoKeyboardPatternSeparatorLabel.TabIndex = 0;
+            this.AutoKeyboardPatternSeparatorLabel.Text = "Separator";
             // 
             // AutoKeyboardPatternLabel
             // 
@@ -1676,11 +1676,11 @@ namespace AutoClicker
             this.Controls.Add(this.MinimizeApplicationButton);
             this.Controls.Add(this.CloseApplicationButton);
             this.Controls.Add(this.DeletePanelParent);
-            this.Controls.Add(this.AutoKeyboardPanel);
             this.Controls.Add(this.AutoClickerPanel);
             this.Controls.Add(this.MacrosPanel);
             this.Controls.Add(this.SettingsPanel);
             this.Controls.Add(this.HotkeysPanel);
+            this.Controls.Add(this.AutoKeyboardPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AutoClickerForm";
@@ -1827,8 +1827,8 @@ namespace AutoClicker
         private System.Windows.Forms.Label SettingsStopAutoKeyboardLabel;
         private System.Windows.Forms.TextBox SettingsStartAutoKeyboardTextbox;
         private System.Windows.Forms.Label SettingsStartAutoKeyboardLabel;
-        private System.Windows.Forms.TextBox AutoKeyboardPatternSeperatorTextbox;
-        private System.Windows.Forms.Label AutoKeyboardPatternSeperatorLabel;
+        private System.Windows.Forms.TextBox AutoKeyboardPatternSeparatorTextbox;
+        private System.Windows.Forms.Label AutoKeyboardPatternSeparatorLabel;
         private System.Windows.Forms.Label AutoKeyboardPatternLabel;
         private System.Windows.Forms.TextBox AutoKeyboardPatternTextbox;
         private System.Windows.Forms.Panel DeletePanelParent;
