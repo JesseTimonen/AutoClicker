@@ -174,9 +174,10 @@ namespace AutoClicker
             this.MacroToMacroButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MacroToMacroButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MacroToMacroButton.ForeColor = System.Drawing.Color.White;
-            this.MacroToMacroButton.Location = new System.Drawing.Point(150, 0);
+            this.MacroToMacroButton.Location = new System.Drawing.Point(112, 0);
+            this.MacroToMacroButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MacroToMacroButton.Name = "MacroToMacroButton";
-            this.MacroToMacroButton.Size = new System.Drawing.Size(150, 60);
+            this.MacroToMacroButton.Size = new System.Drawing.Size(112, 49);
             this.MacroToMacroButton.TabIndex = 0;
             this.MacroToMacroButton.TabStop = false;
             this.MacroToMacroButton.Text = "Macros";
@@ -187,9 +188,10 @@ namespace AutoClicker
             this.MacroToHotkeysButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.MacroToHotkeysButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MacroToHotkeysButton.ForeColor = System.Drawing.Color.White;
-            this.MacroToHotkeysButton.Location = new System.Drawing.Point(300, 0);
+            this.MacroToHotkeysButton.Location = new System.Drawing.Point(225, 0);
+            this.MacroToHotkeysButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MacroToHotkeysButton.Name = "MacroToHotkeysButton";
-            this.MacroToHotkeysButton.Size = new System.Drawing.Size(150, 60);
+            this.MacroToHotkeysButton.Size = new System.Drawing.Size(112, 49);
             this.MacroToHotkeysButton.TabIndex = 0;
             this.MacroToHotkeysButton.TabStop = false;
             this.MacroToHotkeysButton.Text = "Hotkeys";
@@ -200,9 +202,10 @@ namespace AutoClicker
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(820, 70);
+            this.label1.Location = new System.Drawing.Point(615, 57);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 17);
+            this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Status:";
             // 
@@ -210,9 +213,10 @@ namespace AutoClicker
             // 
             this.MacroStatusLabel.AutoSize = true;
             this.MacroStatusLabel.ForeColor = System.Drawing.Color.Red;
-            this.MacroStatusLabel.Location = new System.Drawing.Point(870, 70);
+            this.MacroStatusLabel.Location = new System.Drawing.Point(652, 57);
+            this.MacroStatusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MacroStatusLabel.Name = "MacroStatusLabel";
-            this.MacroStatusLabel.Size = new System.Drawing.Size(35, 17);
+            this.MacroStatusLabel.Size = new System.Drawing.Size(27, 13);
             this.MacroStatusLabel.TabIndex = 0;
             this.MacroStatusLabel.Text = "OFF";
             // 
@@ -225,9 +229,10 @@ namespace AutoClicker
             this.CloseApplicationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseApplicationButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseApplicationButton.ForeColor = System.Drawing.Color.Red;
-            this.CloseApplicationButton.Location = new System.Drawing.Point(984, 0);
+            this.CloseApplicationButton.Location = new System.Drawing.Point(738, 0);
+            this.CloseApplicationButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CloseApplicationButton.Name = "CloseApplicationButton";
-            this.CloseApplicationButton.Size = new System.Drawing.Size(40, 40);
+            this.CloseApplicationButton.Size = new System.Drawing.Size(30, 32);
             this.CloseApplicationButton.TabIndex = 0;
             this.CloseApplicationButton.TabStop = false;
             this.CloseApplicationButton.Text = "X";
@@ -243,9 +248,10 @@ namespace AutoClicker
             this.MinimizeApplicationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MinimizeApplicationButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinimizeApplicationButton.ForeColor = System.Drawing.Color.White;
-            this.MinimizeApplicationButton.Location = new System.Drawing.Point(944, 0);
+            this.MinimizeApplicationButton.Location = new System.Drawing.Point(708, 0);
+            this.MinimizeApplicationButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MinimizeApplicationButton.Name = "MinimizeApplicationButton";
-            this.MinimizeApplicationButton.Size = new System.Drawing.Size(40, 40);
+            this.MinimizeApplicationButton.Size = new System.Drawing.Size(30, 32);
             this.MinimizeApplicationButton.TabIndex = 0;
             this.MinimizeApplicationButton.TabStop = false;
             this.MinimizeApplicationButton.Text = "=";
@@ -266,9 +272,10 @@ namespace AutoClicker
             this.MacrosPanel.Controls.Add(this.MacroToHotkeysButton);
             this.MacrosPanel.Controls.Add(this.label1);
             this.MacrosPanel.Controls.Add(this.MacroStatusLabel);
-            this.MacrosPanel.Location = new System.Drawing.Point(0, 40);
+            this.MacrosPanel.Location = new System.Drawing.Point(0, 32);
+            this.MacrosPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MacrosPanel.Name = "MacrosPanel";
-            this.MacrosPanel.Size = new System.Drawing.Size(1024, 536);
+            this.MacrosPanel.Size = new System.Drawing.Size(768, 436);
             this.MacrosPanel.TabIndex = 0;
             this.MacrosPanel.Visible = false;
             // 
@@ -277,9 +284,10 @@ namespace AutoClicker
             this.MacroToAutoKeyboardButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.MacroToAutoKeyboardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MacroToAutoKeyboardButton.ForeColor = System.Drawing.Color.White;
-            this.MacroToAutoKeyboardButton.Location = new System.Drawing.Point(450, 0);
+            this.MacroToAutoKeyboardButton.Location = new System.Drawing.Point(338, 0);
+            this.MacroToAutoKeyboardButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MacroToAutoKeyboardButton.Name = "MacroToAutoKeyboardButton";
-            this.MacroToAutoKeyboardButton.Size = new System.Drawing.Size(150, 60);
+            this.MacroToAutoKeyboardButton.Size = new System.Drawing.Size(112, 49);
             this.MacroToAutoKeyboardButton.TabIndex = 0;
             this.MacroToAutoKeyboardButton.TabStop = false;
             this.MacroToAutoKeyboardButton.Text = "Auto Keyboard";
@@ -292,8 +300,9 @@ namespace AutoClicker
             this.MacroToAutoClickerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MacroToAutoClickerButton.ForeColor = System.Drawing.Color.White;
             this.MacroToAutoClickerButton.Location = new System.Drawing.Point(0, 0);
+            this.MacroToAutoClickerButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MacroToAutoClickerButton.Name = "MacroToAutoClickerButton";
-            this.MacroToAutoClickerButton.Size = new System.Drawing.Size(150, 60);
+            this.MacroToAutoClickerButton.Size = new System.Drawing.Size(112, 49);
             this.MacroToAutoClickerButton.TabIndex = 0;
             this.MacroToAutoClickerButton.TabStop = false;
             this.MacroToAutoClickerButton.Text = "Auto Clicker";
@@ -304,9 +313,10 @@ namespace AutoClicker
             // 
             this.MacrosSavedFeedbackLabel.AutoSize = true;
             this.MacrosSavedFeedbackLabel.ForeColor = System.Drawing.Color.ForestGreen;
-            this.MacrosSavedFeedbackLabel.Location = new System.Drawing.Point(180, 475);
+            this.MacrosSavedFeedbackLabel.Location = new System.Drawing.Point(135, 386);
+            this.MacrosSavedFeedbackLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MacrosSavedFeedbackLabel.Name = "MacrosSavedFeedbackLabel";
-            this.MacrosSavedFeedbackLabel.Size = new System.Drawing.Size(170, 17);
+            this.MacrosSavedFeedbackLabel.Size = new System.Drawing.Size(131, 13);
             this.MacrosSavedFeedbackLabel.TabIndex = 0;
             this.MacrosSavedFeedbackLabel.Text = "Macros have been saved!";
             this.MacrosSavedFeedbackLabel.Visible = false;
@@ -320,9 +330,10 @@ namespace AutoClicker
             this.SaveMacrosButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.SaveMacrosButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveMacrosButton.ForeColor = System.Drawing.Color.White;
-            this.SaveMacrosButton.Location = new System.Drawing.Point(30, 460);
+            this.SaveMacrosButton.Location = new System.Drawing.Point(22, 374);
+            this.SaveMacrosButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SaveMacrosButton.Name = "SaveMacrosButton";
-            this.SaveMacrosButton.Size = new System.Drawing.Size(128, 48);
+            this.SaveMacrosButton.Size = new System.Drawing.Size(96, 39);
             this.SaveMacrosButton.TabIndex = 0;
             this.SaveMacrosButton.TabStop = false;
             this.SaveMacrosButton.Text = "Save Macros";
@@ -334,9 +345,10 @@ namespace AutoClicker
             this.MacroToSettingsButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.MacroToSettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MacroToSettingsButton.ForeColor = System.Drawing.Color.White;
-            this.MacroToSettingsButton.Location = new System.Drawing.Point(600, 0);
+            this.MacroToSettingsButton.Location = new System.Drawing.Point(450, 0);
+            this.MacroToSettingsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MacroToSettingsButton.Name = "MacroToSettingsButton";
-            this.MacroToSettingsButton.Size = new System.Drawing.Size(150, 60);
+            this.MacroToSettingsButton.Size = new System.Drawing.Size(112, 49);
             this.MacroToSettingsButton.TabIndex = 0;
             this.MacroToSettingsButton.TabStop = false;
             this.MacroToSettingsButton.Text = "Settings";
@@ -347,9 +359,10 @@ namespace AutoClicker
             // 
             this.SavedMacrosPanel.AutoScroll = true;
             this.SavedMacrosPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(54)))));
-            this.SavedMacrosPanel.Location = new System.Drawing.Point(0, 110);
+            this.SavedMacrosPanel.Location = new System.Drawing.Point(0, 89);
+            this.SavedMacrosPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SavedMacrosPanel.Name = "SavedMacrosPanel";
-            this.SavedMacrosPanel.Size = new System.Drawing.Size(995, 330);
+            this.SavedMacrosPanel.Size = new System.Drawing.Size(746, 268);
             this.SavedMacrosPanel.TabIndex = 0;
             // 
             // NewMacroButton
@@ -357,9 +370,10 @@ namespace AutoClicker
             this.NewMacroButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(120)))), ((int)(((byte)(0)))));
             this.NewMacroButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NewMacroButton.ForeColor = System.Drawing.Color.White;
-            this.NewMacroButton.Location = new System.Drawing.Point(820, 0);
+            this.NewMacroButton.Location = new System.Drawing.Point(615, 0);
+            this.NewMacroButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NewMacroButton.Name = "NewMacroButton";
-            this.NewMacroButton.Size = new System.Drawing.Size(150, 60);
+            this.NewMacroButton.Size = new System.Drawing.Size(112, 49);
             this.NewMacroButton.TabIndex = 0;
             this.NewMacroButton.TabStop = false;
             this.NewMacroButton.Text = "Record New Macro (Hotkey: F1)";
@@ -371,9 +385,10 @@ namespace AutoClicker
             this.ApplicationTitle.AutoSize = true;
             this.ApplicationTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ApplicationTitle.ForeColor = System.Drawing.Color.White;
-            this.ApplicationTitle.Location = new System.Drawing.Point(10, 10);
+            this.ApplicationTitle.Location = new System.Drawing.Point(8, 8);
+            this.ApplicationTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ApplicationTitle.Name = "ApplicationTitle";
-            this.ApplicationTitle.Size = new System.Drawing.Size(112, 20);
+            this.ApplicationTitle.Size = new System.Drawing.Size(95, 17);
             this.ApplicationTitle.TabIndex = 0;
             this.ApplicationTitle.Text = "Auto Clicker";
             // 
@@ -392,9 +407,10 @@ namespace AutoClicker
             this.HotkeysPanel.Controls.Add(this.HotkeysToHotkeysButton);
             this.HotkeysPanel.Controls.Add(this.label2);
             this.HotkeysPanel.Controls.Add(this.HotkeysStatusLabel);
-            this.HotkeysPanel.Location = new System.Drawing.Point(0, 40);
+            this.HotkeysPanel.Location = new System.Drawing.Point(0, 32);
+            this.HotkeysPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HotkeysPanel.Name = "HotkeysPanel";
-            this.HotkeysPanel.Size = new System.Drawing.Size(1024, 536);
+            this.HotkeysPanel.Size = new System.Drawing.Size(768, 436);
             this.HotkeysPanel.TabIndex = 0;
             this.HotkeysPanel.Visible = false;
             // 
@@ -403,9 +419,10 @@ namespace AutoClicker
             this.HotkeysToAutoKeyboardButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.HotkeysToAutoKeyboardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HotkeysToAutoKeyboardButton.ForeColor = System.Drawing.Color.White;
-            this.HotkeysToAutoKeyboardButton.Location = new System.Drawing.Point(450, 0);
+            this.HotkeysToAutoKeyboardButton.Location = new System.Drawing.Point(338, 0);
+            this.HotkeysToAutoKeyboardButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HotkeysToAutoKeyboardButton.Name = "HotkeysToAutoKeyboardButton";
-            this.HotkeysToAutoKeyboardButton.Size = new System.Drawing.Size(150, 60);
+            this.HotkeysToAutoKeyboardButton.Size = new System.Drawing.Size(112, 49);
             this.HotkeysToAutoKeyboardButton.TabIndex = 0;
             this.HotkeysToAutoKeyboardButton.TabStop = false;
             this.HotkeysToAutoKeyboardButton.Text = "Auto Keyboard";
@@ -418,8 +435,9 @@ namespace AutoClicker
             this.HotkeysToAutoClickerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HotkeysToAutoClickerButton.ForeColor = System.Drawing.Color.White;
             this.HotkeysToAutoClickerButton.Location = new System.Drawing.Point(0, 0);
+            this.HotkeysToAutoClickerButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HotkeysToAutoClickerButton.Name = "HotkeysToAutoClickerButton";
-            this.HotkeysToAutoClickerButton.Size = new System.Drawing.Size(150, 60);
+            this.HotkeysToAutoClickerButton.Size = new System.Drawing.Size(112, 49);
             this.HotkeysToAutoClickerButton.TabIndex = 0;
             this.HotkeysToAutoClickerButton.TabStop = false;
             this.HotkeysToAutoClickerButton.Text = "Auto Clicker";
@@ -430,9 +448,10 @@ namespace AutoClicker
             // 
             this.HotkeysSavedFeedbackLabel.AutoSize = true;
             this.HotkeysSavedFeedbackLabel.ForeColor = System.Drawing.Color.ForestGreen;
-            this.HotkeysSavedFeedbackLabel.Location = new System.Drawing.Point(180, 475);
+            this.HotkeysSavedFeedbackLabel.Location = new System.Drawing.Point(135, 386);
+            this.HotkeysSavedFeedbackLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HotkeysSavedFeedbackLabel.Name = "HotkeysSavedFeedbackLabel";
-            this.HotkeysSavedFeedbackLabel.Size = new System.Drawing.Size(175, 17);
+            this.HotkeysSavedFeedbackLabel.Size = new System.Drawing.Size(135, 13);
             this.HotkeysSavedFeedbackLabel.TabIndex = 0;
             this.HotkeysSavedFeedbackLabel.Text = "Hotkeys have been saved!";
             this.HotkeysSavedFeedbackLabel.Visible = false;
@@ -445,18 +464,20 @@ namespace AutoClicker
             this.HotkeysGuidePanel.Controls.Add(this.HotkeyGuideLabel1);
             this.HotkeysGuidePanel.Controls.Add(this.HotkeyGuideLabel3);
             this.HotkeysGuidePanel.Controls.Add(this.HotkeyGuideLabel4);
-            this.HotkeysGuidePanel.Location = new System.Drawing.Point(695, 110);
+            this.HotkeysGuidePanel.Location = new System.Drawing.Point(521, 89);
+            this.HotkeysGuidePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HotkeysGuidePanel.Name = "HotkeysGuidePanel";
-            this.HotkeysGuidePanel.Size = new System.Drawing.Size(300, 370);
+            this.HotkeysGuidePanel.Size = new System.Drawing.Size(225, 301);
             this.HotkeysGuidePanel.TabIndex = 0;
             // 
             // HotkeyGuideLabel2
             // 
             this.HotkeyGuideLabel2.AutoSize = true;
             this.HotkeyGuideLabel2.ForeColor = System.Drawing.Color.Silver;
-            this.HotkeyGuideLabel2.Location = new System.Drawing.Point(0, 50);
+            this.HotkeyGuideLabel2.Location = new System.Drawing.Point(0, 41);
+            this.HotkeyGuideLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HotkeyGuideLabel2.Name = "HotkeyGuideLabel2";
-            this.HotkeyGuideLabel2.Size = new System.Drawing.Size(156, 238);
+            this.HotkeyGuideLabel2.Size = new System.Drawing.Size(120, 182);
             this.HotkeyGuideLabel2.TabIndex = 0;
             this.HotkeyGuideLabel2.Text = resources.GetString("HotkeyGuideLabel2.Text");
             // 
@@ -465,9 +486,10 @@ namespace AutoClicker
             this.HotkeyGuideLabel1.AutoSize = true;
             this.HotkeyGuideLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HotkeyGuideLabel1.ForeColor = System.Drawing.Color.White;
-            this.HotkeyGuideLabel1.Location = new System.Drawing.Point(0, 20);
+            this.HotkeyGuideLabel1.Location = new System.Drawing.Point(0, 16);
+            this.HotkeyGuideLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HotkeyGuideLabel1.Name = "HotkeyGuideLabel1";
-            this.HotkeyGuideLabel1.Size = new System.Drawing.Size(178, 17);
+            this.HotkeyGuideLabel1.Size = new System.Drawing.Size(142, 13);
             this.HotkeyGuideLabel1.TabIndex = 0;
             this.HotkeyGuideLabel1.Text = "How to Create Hotkeys:";
             // 
@@ -476,9 +498,10 @@ namespace AutoClicker
             this.HotkeyGuideLabel3.AutoSize = true;
             this.HotkeyGuideLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HotkeyGuideLabel3.ForeColor = System.Drawing.Color.White;
-            this.HotkeyGuideLabel3.Location = new System.Drawing.Point(0, 320);
+            this.HotkeyGuideLabel3.Location = new System.Drawing.Point(0, 260);
+            this.HotkeyGuideLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HotkeyGuideLabel3.Name = "HotkeyGuideLabel3";
-            this.HotkeyGuideLabel3.Size = new System.Drawing.Size(160, 17);
+            this.HotkeyGuideLabel3.Size = new System.Drawing.Size(127, 13);
             this.HotkeyGuideLabel3.TabIndex = 0;
             this.HotkeyGuideLabel3.Text = "Available Input Keys:";
             // 
@@ -486,9 +509,10 @@ namespace AutoClicker
             // 
             this.HotkeyGuideLabel4.AutoSize = true;
             this.HotkeyGuideLabel4.ForeColor = System.Drawing.Color.Silver;
-            this.HotkeyGuideLabel4.Location = new System.Drawing.Point(0, 350);
+            this.HotkeyGuideLabel4.Location = new System.Drawing.Point(0, 284);
+            this.HotkeyGuideLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HotkeyGuideLabel4.Name = "HotkeyGuideLabel4";
-            this.HotkeyGuideLabel4.Size = new System.Drawing.Size(139, 323);
+            this.HotkeyGuideLabel4.Size = new System.Drawing.Size(104, 247);
             this.HotkeyGuideLabel4.TabIndex = 0;
             this.HotkeyGuideLabel4.Text = "A-Z\r\n0-9\r\nnumpad0 - numpad9\r\ntab\r\nspace\r\npageup\r\npagedown\r\nup\r\ndown\r\nleft\r\nright\r" +
     "\nenter\r\nbackspace\r\ncapslock\r\nscroll lock\r\nhome\r\ninsert\r\nnumlock\r\nnone";
@@ -502,9 +526,10 @@ namespace AutoClicker
             this.SaveHotkeysButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.SaveHotkeysButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveHotkeysButton.ForeColor = System.Drawing.Color.White;
-            this.SaveHotkeysButton.Location = new System.Drawing.Point(30, 460);
+            this.SaveHotkeysButton.Location = new System.Drawing.Point(22, 374);
+            this.SaveHotkeysButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SaveHotkeysButton.Name = "SaveHotkeysButton";
-            this.SaveHotkeysButton.Size = new System.Drawing.Size(128, 48);
+            this.SaveHotkeysButton.Size = new System.Drawing.Size(96, 39);
             this.SaveHotkeysButton.TabIndex = 0;
             this.SaveHotkeysButton.TabStop = false;
             this.SaveHotkeysButton.Text = "Save Hotkeys";
@@ -516,9 +541,10 @@ namespace AutoClicker
             this.HotkeysToSettingsButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.HotkeysToSettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HotkeysToSettingsButton.ForeColor = System.Drawing.Color.White;
-            this.HotkeysToSettingsButton.Location = new System.Drawing.Point(600, 0);
+            this.HotkeysToSettingsButton.Location = new System.Drawing.Point(450, 0);
+            this.HotkeysToSettingsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HotkeysToSettingsButton.Name = "HotkeysToSettingsButton";
-            this.HotkeysToSettingsButton.Size = new System.Drawing.Size(150, 60);
+            this.HotkeysToSettingsButton.Size = new System.Drawing.Size(112, 49);
             this.HotkeysToSettingsButton.TabIndex = 0;
             this.HotkeysToSettingsButton.TabStop = false;
             this.HotkeysToSettingsButton.Text = "Settings";
@@ -529,9 +555,10 @@ namespace AutoClicker
             // 
             this.SavedHotkeysPanel.AutoScroll = true;
             this.SavedHotkeysPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(54)))));
-            this.SavedHotkeysPanel.Location = new System.Drawing.Point(0, 110);
+            this.SavedHotkeysPanel.Location = new System.Drawing.Point(0, 89);
+            this.SavedHotkeysPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SavedHotkeysPanel.Name = "SavedHotkeysPanel";
-            this.SavedHotkeysPanel.Size = new System.Drawing.Size(662, 330);
+            this.SavedHotkeysPanel.Size = new System.Drawing.Size(496, 268);
             this.SavedHotkeysPanel.TabIndex = 0;
             // 
             // ToggleHotkeysButton
@@ -539,9 +566,10 @@ namespace AutoClicker
             this.ToggleHotkeysButton.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.ToggleHotkeysButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ToggleHotkeysButton.ForeColor = System.Drawing.Color.White;
-            this.ToggleHotkeysButton.Location = new System.Drawing.Point(820, 0);
+            this.ToggleHotkeysButton.Location = new System.Drawing.Point(615, 0);
+            this.ToggleHotkeysButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ToggleHotkeysButton.Name = "ToggleHotkeysButton";
-            this.ToggleHotkeysButton.Size = new System.Drawing.Size(150, 60);
+            this.ToggleHotkeysButton.Size = new System.Drawing.Size(112, 49);
             this.ToggleHotkeysButton.TabIndex = 0;
             this.ToggleHotkeysButton.TabStop = false;
             this.ToggleHotkeysButton.Text = "Activate Hotkeys";
@@ -553,9 +581,10 @@ namespace AutoClicker
             this.HotkeysToMacroButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.HotkeysToMacroButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HotkeysToMacroButton.ForeColor = System.Drawing.Color.White;
-            this.HotkeysToMacroButton.Location = new System.Drawing.Point(150, 0);
+            this.HotkeysToMacroButton.Location = new System.Drawing.Point(112, 0);
+            this.HotkeysToMacroButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HotkeysToMacroButton.Name = "HotkeysToMacroButton";
-            this.HotkeysToMacroButton.Size = new System.Drawing.Size(150, 60);
+            this.HotkeysToMacroButton.Size = new System.Drawing.Size(112, 49);
             this.HotkeysToMacroButton.TabIndex = 0;
             this.HotkeysToMacroButton.TabStop = false;
             this.HotkeysToMacroButton.Text = "Macros";
@@ -572,9 +601,10 @@ namespace AutoClicker
             this.HotkeysToHotkeysButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HotkeysToHotkeysButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HotkeysToHotkeysButton.ForeColor = System.Drawing.Color.White;
-            this.HotkeysToHotkeysButton.Location = new System.Drawing.Point(300, 0);
+            this.HotkeysToHotkeysButton.Location = new System.Drawing.Point(225, 0);
+            this.HotkeysToHotkeysButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HotkeysToHotkeysButton.Name = "HotkeysToHotkeysButton";
-            this.HotkeysToHotkeysButton.Size = new System.Drawing.Size(150, 60);
+            this.HotkeysToHotkeysButton.Size = new System.Drawing.Size(112, 49);
             this.HotkeysToHotkeysButton.TabIndex = 0;
             this.HotkeysToHotkeysButton.TabStop = false;
             this.HotkeysToHotkeysButton.Text = "Hotkeys";
@@ -584,9 +614,10 @@ namespace AutoClicker
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(820, 70);
+            this.label2.Location = new System.Drawing.Point(615, 57);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 17);
+            this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Status:";
             // 
@@ -594,9 +625,10 @@ namespace AutoClicker
             // 
             this.HotkeysStatusLabel.AutoSize = true;
             this.HotkeysStatusLabel.ForeColor = System.Drawing.Color.Red;
-            this.HotkeysStatusLabel.Location = new System.Drawing.Point(870, 70);
+            this.HotkeysStatusLabel.Location = new System.Drawing.Point(652, 57);
+            this.HotkeysStatusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HotkeysStatusLabel.Name = "HotkeysStatusLabel";
-            this.HotkeysStatusLabel.Size = new System.Drawing.Size(35, 17);
+            this.HotkeysStatusLabel.Size = new System.Drawing.Size(27, 13);
             this.HotkeysStatusLabel.TabIndex = 0;
             this.HotkeysStatusLabel.Text = "OFF";
             // 
@@ -643,9 +675,10 @@ namespace AutoClicker
             this.SettingsPanel.Controls.Add(this.SettingsToMacroButton);
             this.SettingsPanel.Controls.Add(this.SettingsToHotkeysButton);
             this.SettingsPanel.Controls.Add(this.SettingsEngineSpeedTitle);
-            this.SettingsPanel.Location = new System.Drawing.Point(0, 40);
+            this.SettingsPanel.Location = new System.Drawing.Point(0, 32);
+            this.SettingsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsPanel.Name = "SettingsPanel";
-            this.SettingsPanel.Size = new System.Drawing.Size(1024, 536);
+            this.SettingsPanel.Size = new System.Drawing.Size(768, 436);
             this.SettingsPanel.TabIndex = 0;
             this.SettingsPanel.Visible = false;
             // 
@@ -653,9 +686,10 @@ namespace AutoClicker
             // 
             this.SettingsSameAutoKeyboardHotkeyCheckbox.AutoSize = true;
             this.SettingsSameAutoKeyboardHotkeyCheckbox.ForeColor = System.Drawing.Color.White;
-            this.SettingsSameAutoKeyboardHotkeyCheckbox.Location = new System.Drawing.Point(610, 436);
+            this.SettingsSameAutoKeyboardHotkeyCheckbox.Location = new System.Drawing.Point(458, 354);
+            this.SettingsSameAutoKeyboardHotkeyCheckbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsSameAutoKeyboardHotkeyCheckbox.Name = "SettingsSameAutoKeyboardHotkeyCheckbox";
-            this.SettingsSameAutoKeyboardHotkeyCheckbox.Size = new System.Drawing.Size(198, 21);
+            this.SettingsSameAutoKeyboardHotkeyCheckbox.Size = new System.Drawing.Size(153, 17);
             this.SettingsSameAutoKeyboardHotkeyCheckbox.TabIndex = 0;
             this.SettingsSameAutoKeyboardHotkeyCheckbox.TabStop = false;
             this.SettingsSameAutoKeyboardHotkeyCheckbox.Text = "Use same key to start/stop";
@@ -664,9 +698,10 @@ namespace AutoClicker
             // 
             // SettingsStopAutoKeyboardTextbox
             // 
-            this.SettingsStopAutoKeyboardTextbox.Location = new System.Drawing.Point(503, 435);
+            this.SettingsStopAutoKeyboardTextbox.Location = new System.Drawing.Point(377, 353);
+            this.SettingsStopAutoKeyboardTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsStopAutoKeyboardTextbox.Name = "SettingsStopAutoKeyboardTextbox";
-            this.SettingsStopAutoKeyboardTextbox.Size = new System.Drawing.Size(100, 22);
+            this.SettingsStopAutoKeyboardTextbox.Size = new System.Drawing.Size(76, 20);
             this.SettingsStopAutoKeyboardTextbox.TabIndex = 0;
             this.SettingsStopAutoKeyboardTextbox.TabStop = false;
             this.SettingsStopAutoKeyboardTextbox.Validating += new System.ComponentModel.CancelEventHandler(this.SettingsStopAutoKeyboardTextbox_Validating);
@@ -675,17 +710,19 @@ namespace AutoClicker
             // 
             this.SettingsStopAutoKeyboardLabel.AutoSize = true;
             this.SettingsStopAutoKeyboardLabel.ForeColor = System.Drawing.Color.White;
-            this.SettingsStopAutoKeyboardLabel.Location = new System.Drawing.Point(500, 415);
+            this.SettingsStopAutoKeyboardLabel.Location = new System.Drawing.Point(375, 337);
+            this.SettingsStopAutoKeyboardLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SettingsStopAutoKeyboardLabel.Name = "SettingsStopAutoKeyboardLabel";
-            this.SettingsStopAutoKeyboardLabel.Size = new System.Drawing.Size(132, 17);
+            this.SettingsStopAutoKeyboardLabel.Size = new System.Drawing.Size(100, 13);
             this.SettingsStopAutoKeyboardLabel.TabIndex = 0;
             this.SettingsStopAutoKeyboardLabel.Text = "Stop auto keyboard";
             // 
             // SettingsStartAutoKeyboardTextbox
             // 
-            this.SettingsStartAutoKeyboardTextbox.Location = new System.Drawing.Point(503, 380);
+            this.SettingsStartAutoKeyboardTextbox.Location = new System.Drawing.Point(377, 309);
+            this.SettingsStartAutoKeyboardTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsStartAutoKeyboardTextbox.Name = "SettingsStartAutoKeyboardTextbox";
-            this.SettingsStartAutoKeyboardTextbox.Size = new System.Drawing.Size(100, 22);
+            this.SettingsStartAutoKeyboardTextbox.Size = new System.Drawing.Size(76, 20);
             this.SettingsStartAutoKeyboardTextbox.TabIndex = 0;
             this.SettingsStartAutoKeyboardTextbox.TabStop = false;
             this.SettingsStartAutoKeyboardTextbox.Validating += new System.ComponentModel.CancelEventHandler(this.SettingsStartAutoKeyboardTextbox_Validating);
@@ -694,9 +731,10 @@ namespace AutoClicker
             // 
             this.SettingsStartAutoKeyboardLabel.AutoSize = true;
             this.SettingsStartAutoKeyboardLabel.ForeColor = System.Drawing.Color.White;
-            this.SettingsStartAutoKeyboardLabel.Location = new System.Drawing.Point(500, 360);
+            this.SettingsStartAutoKeyboardLabel.Location = new System.Drawing.Point(375, 292);
+            this.SettingsStartAutoKeyboardLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SettingsStartAutoKeyboardLabel.Name = "SettingsStartAutoKeyboardLabel";
-            this.SettingsStartAutoKeyboardLabel.Size = new System.Drawing.Size(133, 17);
+            this.SettingsStartAutoKeyboardLabel.Size = new System.Drawing.Size(100, 13);
             this.SettingsStartAutoKeyboardLabel.TabIndex = 0;
             this.SettingsStartAutoKeyboardLabel.Text = "Start auto keyboard";
             // 
@@ -705,9 +743,10 @@ namespace AutoClicker
             this.SettingsToAutoKeyboardButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.SettingsToAutoKeyboardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SettingsToAutoKeyboardButton.ForeColor = System.Drawing.Color.White;
-            this.SettingsToAutoKeyboardButton.Location = new System.Drawing.Point(450, 0);
+            this.SettingsToAutoKeyboardButton.Location = new System.Drawing.Point(338, 0);
+            this.SettingsToAutoKeyboardButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsToAutoKeyboardButton.Name = "SettingsToAutoKeyboardButton";
-            this.SettingsToAutoKeyboardButton.Size = new System.Drawing.Size(150, 60);
+            this.SettingsToAutoKeyboardButton.Size = new System.Drawing.Size(112, 49);
             this.SettingsToAutoKeyboardButton.TabIndex = 0;
             this.SettingsToAutoKeyboardButton.TabStop = false;
             this.SettingsToAutoKeyboardButton.Text = "Auto Keyboard";
@@ -718,9 +757,10 @@ namespace AutoClicker
             // 
             this.SettingsDelayAutoClickerCheckbox.AutoSize = true;
             this.SettingsDelayAutoClickerCheckbox.ForeColor = System.Drawing.Color.White;
-            this.SettingsDelayAutoClickerCheckbox.Location = new System.Drawing.Point(45, 400);
+            this.SettingsDelayAutoClickerCheckbox.Location = new System.Drawing.Point(34, 325);
+            this.SettingsDelayAutoClickerCheckbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsDelayAutoClickerCheckbox.Name = "SettingsDelayAutoClickerCheckbox";
-            this.SettingsDelayAutoClickerCheckbox.Size = new System.Drawing.Size(374, 21);
+            this.SettingsDelayAutoClickerCheckbox.Size = new System.Drawing.Size(289, 17);
             this.SettingsDelayAutoClickerCheckbox.TabIndex = 0;
             this.SettingsDelayAutoClickerCheckbox.TabStop = false;
             this.SettingsDelayAutoClickerCheckbox.Text = "Delay Auto Clicker clicking by 1 second when activated";
@@ -730,9 +770,10 @@ namespace AutoClicker
             // 
             this.SettingsSameAutoClickerHotkeyCheckbox.AutoSize = true;
             this.SettingsSameAutoClickerHotkeyCheckbox.ForeColor = System.Drawing.Color.White;
-            this.SettingsSameAutoClickerHotkeyCheckbox.Location = new System.Drawing.Point(610, 216);
+            this.SettingsSameAutoClickerHotkeyCheckbox.Location = new System.Drawing.Point(458, 176);
+            this.SettingsSameAutoClickerHotkeyCheckbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsSameAutoClickerHotkeyCheckbox.Name = "SettingsSameAutoClickerHotkeyCheckbox";
-            this.SettingsSameAutoClickerHotkeyCheckbox.Size = new System.Drawing.Size(198, 21);
+            this.SettingsSameAutoClickerHotkeyCheckbox.Size = new System.Drawing.Size(153, 17);
             this.SettingsSameAutoClickerHotkeyCheckbox.TabIndex = 0;
             this.SettingsSameAutoClickerHotkeyCheckbox.TabStop = false;
             this.SettingsSameAutoClickerHotkeyCheckbox.Text = "Use same key to start/stop";
@@ -743,9 +784,10 @@ namespace AutoClicker
             // 
             this.SettingsSameMacroHotkeyCheckbox.AutoSize = true;
             this.SettingsSameMacroHotkeyCheckbox.ForeColor = System.Drawing.Color.White;
-            this.SettingsSameMacroHotkeyCheckbox.Location = new System.Drawing.Point(610, 326);
+            this.SettingsSameMacroHotkeyCheckbox.Location = new System.Drawing.Point(458, 265);
+            this.SettingsSameMacroHotkeyCheckbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsSameMacroHotkeyCheckbox.Name = "SettingsSameMacroHotkeyCheckbox";
-            this.SettingsSameMacroHotkeyCheckbox.Size = new System.Drawing.Size(198, 21);
+            this.SettingsSameMacroHotkeyCheckbox.Size = new System.Drawing.Size(153, 17);
             this.SettingsSameMacroHotkeyCheckbox.TabIndex = 0;
             this.SettingsSameMacroHotkeyCheckbox.TabStop = false;
             this.SettingsSameMacroHotkeyCheckbox.Text = "Use same key to start/stop";
@@ -756,10 +798,11 @@ namespace AutoClicker
             // 
             this.SettingsFastModeLabel.AutoSize = true;
             this.SettingsFastModeLabel.ForeColor = System.Drawing.Color.Gray;
-            this.SettingsFastModeLabel.Location = new System.Drawing.Point(60, 185);
+            this.SettingsFastModeLabel.Location = new System.Drawing.Point(45, 150);
+            this.SettingsFastModeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SettingsFastModeLabel.Name = "SettingsFastModeLabel";
             this.SettingsFastModeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.SettingsFastModeLabel.Size = new System.Drawing.Size(335, 34);
+            this.SettingsFastModeLabel.Size = new System.Drawing.Size(252, 26);
             this.SettingsFastModeLabel.TabIndex = 0;
             this.SettingsFastModeLabel.Text = "Records macros and does action 50 times a second\r\nCan cause mistakes if your comp" +
     "uter can\'t keep up";
@@ -768,17 +811,19 @@ namespace AutoClicker
             // 
             this.SettingsGeneralHotkeysLabel.AutoSize = true;
             this.SettingsGeneralHotkeysLabel.ForeColor = System.Drawing.Color.Gray;
-            this.SettingsGeneralHotkeysLabel.Location = new System.Drawing.Point(500, 105);
+            this.SettingsGeneralHotkeysLabel.Location = new System.Drawing.Point(375, 85);
+            this.SettingsGeneralHotkeysLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SettingsGeneralHotkeysLabel.Name = "SettingsGeneralHotkeysLabel";
-            this.SettingsGeneralHotkeysLabel.Size = new System.Drawing.Size(225, 17);
+            this.SettingsGeneralHotkeysLabel.Size = new System.Drawing.Size(169, 13);
             this.SettingsGeneralHotkeysLabel.TabIndex = 0;
             this.SettingsGeneralHotkeysLabel.Text = "Only Hotkeys F1 - F11 are allowed";
             // 
             // SettingsStopAutoClickerTextbox
             // 
-            this.SettingsStopAutoClickerTextbox.Location = new System.Drawing.Point(503, 215);
+            this.SettingsStopAutoClickerTextbox.Location = new System.Drawing.Point(377, 175);
+            this.SettingsStopAutoClickerTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsStopAutoClickerTextbox.Name = "SettingsStopAutoClickerTextbox";
-            this.SettingsStopAutoClickerTextbox.Size = new System.Drawing.Size(100, 22);
+            this.SettingsStopAutoClickerTextbox.Size = new System.Drawing.Size(76, 20);
             this.SettingsStopAutoClickerTextbox.TabIndex = 0;
             this.SettingsStopAutoClickerTextbox.TabStop = false;
             this.SettingsStopAutoClickerTextbox.Validating += new System.ComponentModel.CancelEventHandler(this.SettingsStopAutoClickerTextbox_Validating);
@@ -787,17 +832,19 @@ namespace AutoClicker
             // 
             this.SettingsStopAutoClickerLabel.AutoSize = true;
             this.SettingsStopAutoClickerLabel.ForeColor = System.Drawing.Color.White;
-            this.SettingsStopAutoClickerLabel.Location = new System.Drawing.Point(500, 195);
+            this.SettingsStopAutoClickerLabel.Location = new System.Drawing.Point(375, 158);
+            this.SettingsStopAutoClickerLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SettingsStopAutoClickerLabel.Name = "SettingsStopAutoClickerLabel";
-            this.SettingsStopAutoClickerLabel.Size = new System.Drawing.Size(113, 17);
+            this.SettingsStopAutoClickerLabel.Size = new System.Drawing.Size(87, 13);
             this.SettingsStopAutoClickerLabel.TabIndex = 0;
             this.SettingsStopAutoClickerLabel.Text = "Stop auto clicker";
             // 
             // SettingsStartAutoClickerTextbox
             // 
-            this.SettingsStartAutoClickerTextbox.Location = new System.Drawing.Point(503, 160);
+            this.SettingsStartAutoClickerTextbox.Location = new System.Drawing.Point(377, 130);
+            this.SettingsStartAutoClickerTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsStartAutoClickerTextbox.Name = "SettingsStartAutoClickerTextbox";
-            this.SettingsStartAutoClickerTextbox.Size = new System.Drawing.Size(100, 22);
+            this.SettingsStartAutoClickerTextbox.Size = new System.Drawing.Size(76, 20);
             this.SettingsStartAutoClickerTextbox.TabIndex = 0;
             this.SettingsStartAutoClickerTextbox.TabStop = false;
             this.SettingsStartAutoClickerTextbox.Validating += new System.ComponentModel.CancelEventHandler(this.SettingsStartAutoClickerTextbox_Validating);
@@ -806,17 +853,19 @@ namespace AutoClicker
             // 
             this.SettingsStartAutoClickerLabel.AutoSize = true;
             this.SettingsStartAutoClickerLabel.ForeColor = System.Drawing.Color.White;
-            this.SettingsStartAutoClickerLabel.Location = new System.Drawing.Point(500, 140);
+            this.SettingsStartAutoClickerLabel.Location = new System.Drawing.Point(375, 114);
+            this.SettingsStartAutoClickerLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SettingsStartAutoClickerLabel.Name = "SettingsStartAutoClickerLabel";
-            this.SettingsStartAutoClickerLabel.Size = new System.Drawing.Size(114, 17);
+            this.SettingsStartAutoClickerLabel.Size = new System.Drawing.Size(87, 13);
             this.SettingsStartAutoClickerLabel.TabIndex = 0;
             this.SettingsStartAutoClickerLabel.Text = "Start auto clicker";
             // 
             // SettingsCreateHotkeyTextbox
             // 
-            this.SettingsCreateHotkeyTextbox.Location = new System.Drawing.Point(503, 490);
+            this.SettingsCreateHotkeyTextbox.Location = new System.Drawing.Point(377, 398);
+            this.SettingsCreateHotkeyTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsCreateHotkeyTextbox.Name = "SettingsCreateHotkeyTextbox";
-            this.SettingsCreateHotkeyTextbox.Size = new System.Drawing.Size(100, 22);
+            this.SettingsCreateHotkeyTextbox.Size = new System.Drawing.Size(76, 20);
             this.SettingsCreateHotkeyTextbox.TabIndex = 0;
             this.SettingsCreateHotkeyTextbox.TabStop = false;
             this.SettingsCreateHotkeyTextbox.Validating += new System.ComponentModel.CancelEventHandler(this.SettingsCreateHotkeyTextbox_Validating);
@@ -825,17 +874,19 @@ namespace AutoClicker
             // 
             this.SettingsCreateHotkeyLabel.AutoSize = true;
             this.SettingsCreateHotkeyLabel.ForeColor = System.Drawing.Color.White;
-            this.SettingsCreateHotkeyLabel.Location = new System.Drawing.Point(500, 470);
+            this.SettingsCreateHotkeyLabel.Location = new System.Drawing.Point(375, 382);
+            this.SettingsCreateHotkeyLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SettingsCreateHotkeyLabel.Name = "SettingsCreateHotkeyLabel";
-            this.SettingsCreateHotkeyLabel.Size = new System.Drawing.Size(125, 17);
+            this.SettingsCreateHotkeyLabel.Size = new System.Drawing.Size(96, 13);
             this.SettingsCreateHotkeyLabel.TabIndex = 0;
             this.SettingsCreateHotkeyLabel.Text = "Create new hotkey";
             // 
             // SettingsStopMacroTextbox
             // 
-            this.SettingsStopMacroTextbox.Location = new System.Drawing.Point(503, 325);
+            this.SettingsStopMacroTextbox.Location = new System.Drawing.Point(377, 264);
+            this.SettingsStopMacroTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsStopMacroTextbox.Name = "SettingsStopMacroTextbox";
-            this.SettingsStopMacroTextbox.Size = new System.Drawing.Size(100, 22);
+            this.SettingsStopMacroTextbox.Size = new System.Drawing.Size(76, 20);
             this.SettingsStopMacroTextbox.TabIndex = 0;
             this.SettingsStopMacroTextbox.TabStop = false;
             this.SettingsStopMacroTextbox.Validating += new System.ComponentModel.CancelEventHandler(this.SettingsStopMacroTextbox_Validating);
@@ -844,17 +895,19 @@ namespace AutoClicker
             // 
             this.SettingsStopMacroLabel.AutoSize = true;
             this.SettingsStopMacroLabel.ForeColor = System.Drawing.Color.White;
-            this.SettingsStopMacroLabel.Location = new System.Drawing.Point(500, 305);
+            this.SettingsStopMacroLabel.Location = new System.Drawing.Point(375, 248);
+            this.SettingsStopMacroLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SettingsStopMacroLabel.Name = "SettingsStopMacroLabel";
-            this.SettingsStopMacroLabel.Size = new System.Drawing.Size(144, 17);
+            this.SettingsStopMacroLabel.Size = new System.Drawing.Size(108, 13);
             this.SettingsStopMacroLabel.TabIndex = 0;
             this.SettingsStopMacroLabel.Text = "Stop macro recording";
             // 
             // SettingsStartMacroTextbox
             // 
-            this.SettingsStartMacroTextbox.Location = new System.Drawing.Point(503, 270);
+            this.SettingsStartMacroTextbox.Location = new System.Drawing.Point(377, 219);
+            this.SettingsStartMacroTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsStartMacroTextbox.Name = "SettingsStartMacroTextbox";
-            this.SettingsStartMacroTextbox.Size = new System.Drawing.Size(100, 22);
+            this.SettingsStartMacroTextbox.Size = new System.Drawing.Size(76, 20);
             this.SettingsStartMacroTextbox.TabIndex = 0;
             this.SettingsStartMacroTextbox.TabStop = false;
             this.SettingsStartMacroTextbox.Validating += new System.ComponentModel.CancelEventHandler(this.SettingsStartMacroHotkeyTextbox_Validating);
@@ -863,9 +916,10 @@ namespace AutoClicker
             // 
             this.SettingsStartMacroLabel.AutoSize = true;
             this.SettingsStartMacroLabel.ForeColor = System.Drawing.Color.White;
-            this.SettingsStartMacroLabel.Location = new System.Drawing.Point(500, 250);
+            this.SettingsStartMacroLabel.Location = new System.Drawing.Point(375, 203);
+            this.SettingsStartMacroLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SettingsStartMacroLabel.Name = "SettingsStartMacroLabel";
-            this.SettingsStartMacroLabel.Size = new System.Drawing.Size(145, 17);
+            this.SettingsStartMacroLabel.Size = new System.Drawing.Size(108, 13);
             this.SettingsStartMacroLabel.TabIndex = 0;
             this.SettingsStartMacroLabel.Text = "Start macro recording";
             // 
@@ -874,9 +928,10 @@ namespace AutoClicker
             this.SettingsGeneralHotkeysTitle.AutoSize = true;
             this.SettingsGeneralHotkeysTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SettingsGeneralHotkeysTitle.ForeColor = System.Drawing.Color.White;
-            this.SettingsGeneralHotkeysTitle.Location = new System.Drawing.Point(500, 80);
+            this.SettingsGeneralHotkeysTitle.Location = new System.Drawing.Point(375, 65);
+            this.SettingsGeneralHotkeysTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SettingsGeneralHotkeysTitle.Name = "SettingsGeneralHotkeysTitle";
-            this.SettingsGeneralHotkeysTitle.Size = new System.Drawing.Size(149, 20);
+            this.SettingsGeneralHotkeysTitle.Size = new System.Drawing.Size(129, 17);
             this.SettingsGeneralHotkeysTitle.TabIndex = 0;
             this.SettingsGeneralHotkeysTitle.Text = "General Hotkeys";
             // 
@@ -884,9 +939,10 @@ namespace AutoClicker
             // 
             this.SettingsClickWhileMovingCheckbox.AutoSize = true;
             this.SettingsClickWhileMovingCheckbox.ForeColor = System.Drawing.Color.White;
-            this.SettingsClickWhileMovingCheckbox.Location = new System.Drawing.Point(45, 365);
+            this.SettingsClickWhileMovingCheckbox.Location = new System.Drawing.Point(34, 297);
+            this.SettingsClickWhileMovingCheckbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsClickWhileMovingCheckbox.Name = "SettingsClickWhileMovingCheckbox";
-            this.SettingsClickWhileMovingCheckbox.Size = new System.Drawing.Size(203, 21);
+            this.SettingsClickWhileMovingCheckbox.Size = new System.Drawing.Size(157, 17);
             this.SettingsClickWhileMovingCheckbox.TabIndex = 0;
             this.SettingsClickWhileMovingCheckbox.TabStop = false;
             this.SettingsClickWhileMovingCheckbox.Text = "Click while mouse is moving";
@@ -897,9 +953,10 @@ namespace AutoClicker
             this.SettingsAutoClickerTitle.AutoSize = true;
             this.SettingsAutoClickerTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SettingsAutoClickerTitle.ForeColor = System.Drawing.Color.White;
-            this.SettingsAutoClickerTitle.Location = new System.Drawing.Point(30, 330);
+            this.SettingsAutoClickerTitle.Location = new System.Drawing.Point(22, 268);
+            this.SettingsAutoClickerTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SettingsAutoClickerTitle.Name = "SettingsAutoClickerTitle";
-            this.SettingsAutoClickerTitle.Size = new System.Drawing.Size(112, 20);
+            this.SettingsAutoClickerTitle.Size = new System.Drawing.Size(95, 17);
             this.SettingsAutoClickerTitle.TabIndex = 0;
             this.SettingsAutoClickerTitle.Text = "Auto Clicker";
             // 
@@ -909,8 +966,9 @@ namespace AutoClicker
             this.SettingsToAutoClickerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SettingsToAutoClickerButton.ForeColor = System.Drawing.Color.White;
             this.SettingsToAutoClickerButton.Location = new System.Drawing.Point(0, 0);
+            this.SettingsToAutoClickerButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsToAutoClickerButton.Name = "SettingsToAutoClickerButton";
-            this.SettingsToAutoClickerButton.Size = new System.Drawing.Size(150, 60);
+            this.SettingsToAutoClickerButton.Size = new System.Drawing.Size(112, 49);
             this.SettingsToAutoClickerButton.TabIndex = 0;
             this.SettingsToAutoClickerButton.TabStop = false;
             this.SettingsToAutoClickerButton.Text = "Auto Clicker";
@@ -921,10 +979,11 @@ namespace AutoClicker
             // 
             this.SettingsEngineSpeedLabel1.AutoSize = true;
             this.SettingsEngineSpeedLabel1.ForeColor = System.Drawing.Color.Gray;
-            this.SettingsEngineSpeedLabel1.Location = new System.Drawing.Point(30, 105);
+            this.SettingsEngineSpeedLabel1.Location = new System.Drawing.Point(22, 85);
+            this.SettingsEngineSpeedLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SettingsEngineSpeedLabel1.Name = "SettingsEngineSpeedLabel1";
             this.SettingsEngineSpeedLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.SettingsEngineSpeedLabel1.Size = new System.Drawing.Size(365, 34);
+            this.SettingsEngineSpeedLabel1.Size = new System.Drawing.Size(274, 26);
             this.SettingsEngineSpeedLabel1.TabIndex = 0;
             this.SettingsEngineSpeedLabel1.Text = "Fast mode and safe mode have their own unique macros\r\nand they are not compatible" +
     " with each other";
@@ -933,9 +992,10 @@ namespace AutoClicker
             // 
             this.SettingsSavedFeedbackLabel.AutoSize = true;
             this.SettingsSavedFeedbackLabel.ForeColor = System.Drawing.Color.ForestGreen;
-            this.SettingsSavedFeedbackLabel.Location = new System.Drawing.Point(180, 475);
+            this.SettingsSavedFeedbackLabel.Location = new System.Drawing.Point(135, 386);
+            this.SettingsSavedFeedbackLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SettingsSavedFeedbackLabel.Name = "SettingsSavedFeedbackLabel";
-            this.SettingsSavedFeedbackLabel.Size = new System.Drawing.Size(175, 17);
+            this.SettingsSavedFeedbackLabel.Size = new System.Drawing.Size(134, 13);
             this.SettingsSavedFeedbackLabel.TabIndex = 0;
             this.SettingsSavedFeedbackLabel.Text = "Settings have been saved!";
             this.SettingsSavedFeedbackLabel.Visible = false;
@@ -944,9 +1004,10 @@ namespace AutoClicker
             // 
             this.SettingsSafeModeLabel1.AutoSize = true;
             this.SettingsSafeModeLabel1.ForeColor = System.Drawing.Color.Gray;
-            this.SettingsSafeModeLabel1.Location = new System.Drawing.Point(60, 265);
+            this.SettingsSafeModeLabel1.Location = new System.Drawing.Point(45, 215);
+            this.SettingsSafeModeLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SettingsSafeModeLabel1.Name = "SettingsSafeModeLabel1";
-            this.SettingsSafeModeLabel1.Size = new System.Drawing.Size(335, 17);
+            this.SettingsSafeModeLabel1.Size = new System.Drawing.Size(252, 13);
             this.SettingsSafeModeLabel1.TabIndex = 0;
             this.SettingsSafeModeLabel1.Text = "Records macros and does action 20 times a second";
             // 
@@ -955,9 +1016,10 @@ namespace AutoClicker
             this.SettingsSafeModeRadioButton.AutoSize = true;
             this.SettingsSafeModeRadioButton.Checked = true;
             this.SettingsSafeModeRadioButton.ForeColor = System.Drawing.Color.White;
-            this.SettingsSafeModeRadioButton.Location = new System.Drawing.Point(45, 240);
+            this.SettingsSafeModeRadioButton.Location = new System.Drawing.Point(34, 195);
+            this.SettingsSafeModeRadioButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsSafeModeRadioButton.Name = "SettingsSafeModeRadioButton";
-            this.SettingsSafeModeRadioButton.Size = new System.Drawing.Size(97, 21);
+            this.SettingsSafeModeRadioButton.Size = new System.Drawing.Size(77, 17);
             this.SettingsSafeModeRadioButton.TabIndex = 0;
             this.SettingsSafeModeRadioButton.TabStop = true;
             this.SettingsSafeModeRadioButton.Text = "Safe Mode";
@@ -967,9 +1029,10 @@ namespace AutoClicker
             // 
             this.SettingsFastModeRadioButton.AutoSize = true;
             this.SettingsFastModeRadioButton.ForeColor = System.Drawing.Color.White;
-            this.SettingsFastModeRadioButton.Location = new System.Drawing.Point(45, 160);
+            this.SettingsFastModeRadioButton.Location = new System.Drawing.Point(34, 130);
+            this.SettingsFastModeRadioButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsFastModeRadioButton.Name = "SettingsFastModeRadioButton";
-            this.SettingsFastModeRadioButton.Size = new System.Drawing.Size(95, 21);
+            this.SettingsFastModeRadioButton.Size = new System.Drawing.Size(75, 17);
             this.SettingsFastModeRadioButton.TabIndex = 0;
             this.SettingsFastModeRadioButton.Text = "Fast Mode";
             this.SettingsFastModeRadioButton.UseVisualStyleBackColor = true;
@@ -984,9 +1047,10 @@ namespace AutoClicker
             this.SettingsToSettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SettingsToSettingsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SettingsToSettingsButton.ForeColor = System.Drawing.Color.White;
-            this.SettingsToSettingsButton.Location = new System.Drawing.Point(600, 0);
+            this.SettingsToSettingsButton.Location = new System.Drawing.Point(450, 0);
+            this.SettingsToSettingsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsToSettingsButton.Name = "SettingsToSettingsButton";
-            this.SettingsToSettingsButton.Size = new System.Drawing.Size(150, 60);
+            this.SettingsToSettingsButton.Size = new System.Drawing.Size(112, 49);
             this.SettingsToSettingsButton.TabIndex = 0;
             this.SettingsToSettingsButton.TabStop = false;
             this.SettingsToSettingsButton.Text = "Settings";
@@ -1000,9 +1064,10 @@ namespace AutoClicker
             this.SaveSettingsButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.SaveSettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveSettingsButton.ForeColor = System.Drawing.Color.White;
-            this.SaveSettingsButton.Location = new System.Drawing.Point(30, 460);
+            this.SaveSettingsButton.Location = new System.Drawing.Point(22, 374);
+            this.SaveSettingsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SaveSettingsButton.Name = "SaveSettingsButton";
-            this.SaveSettingsButton.Size = new System.Drawing.Size(128, 48);
+            this.SaveSettingsButton.Size = new System.Drawing.Size(96, 39);
             this.SaveSettingsButton.TabIndex = 0;
             this.SaveSettingsButton.TabStop = false;
             this.SaveSettingsButton.Text = "Save Settings";
@@ -1016,9 +1081,10 @@ namespace AutoClicker
             this.SettingsToMacroButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SettingsToMacroButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SettingsToMacroButton.ForeColor = System.Drawing.Color.White;
-            this.SettingsToMacroButton.Location = new System.Drawing.Point(150, 0);
+            this.SettingsToMacroButton.Location = new System.Drawing.Point(112, 0);
+            this.SettingsToMacroButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsToMacroButton.Name = "SettingsToMacroButton";
-            this.SettingsToMacroButton.Size = new System.Drawing.Size(150, 60);
+            this.SettingsToMacroButton.Size = new System.Drawing.Size(112, 49);
             this.SettingsToMacroButton.TabIndex = 0;
             this.SettingsToMacroButton.TabStop = false;
             this.SettingsToMacroButton.Text = "Macros";
@@ -1030,9 +1096,10 @@ namespace AutoClicker
             this.SettingsToHotkeysButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.SettingsToHotkeysButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SettingsToHotkeysButton.ForeColor = System.Drawing.Color.White;
-            this.SettingsToHotkeysButton.Location = new System.Drawing.Point(300, 0);
+            this.SettingsToHotkeysButton.Location = new System.Drawing.Point(225, 0);
+            this.SettingsToHotkeysButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SettingsToHotkeysButton.Name = "SettingsToHotkeysButton";
-            this.SettingsToHotkeysButton.Size = new System.Drawing.Size(150, 60);
+            this.SettingsToHotkeysButton.Size = new System.Drawing.Size(112, 49);
             this.SettingsToHotkeysButton.TabIndex = 0;
             this.SettingsToHotkeysButton.TabStop = false;
             this.SettingsToHotkeysButton.Text = "Hotkeys";
@@ -1044,9 +1111,10 @@ namespace AutoClicker
             this.SettingsEngineSpeedTitle.AutoSize = true;
             this.SettingsEngineSpeedTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SettingsEngineSpeedTitle.ForeColor = System.Drawing.Color.White;
-            this.SettingsEngineSpeedTitle.Location = new System.Drawing.Point(30, 80);
+            this.SettingsEngineSpeedTitle.Location = new System.Drawing.Point(22, 65);
+            this.SettingsEngineSpeedTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SettingsEngineSpeedTitle.Name = "SettingsEngineSpeedTitle";
-            this.SettingsEngineSpeedTitle.Size = new System.Drawing.Size(124, 20);
+            this.SettingsEngineSpeedTitle.Size = new System.Drawing.Size(109, 17);
             this.SettingsEngineSpeedTitle.TabIndex = 0;
             this.SettingsEngineSpeedTitle.Text = "Engine Speed";
             // 
@@ -1054,9 +1122,10 @@ namespace AutoClicker
             // 
             this.DeletePanelParent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.DeletePanelParent.Controls.Add(this.ConfirmDeletePanel);
-            this.DeletePanelParent.Location = new System.Drawing.Point(314, 146);
+            this.DeletePanelParent.Location = new System.Drawing.Point(236, 119);
+            this.DeletePanelParent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DeletePanelParent.Name = "DeletePanelParent";
-            this.DeletePanelParent.Size = new System.Drawing.Size(396, 246);
+            this.DeletePanelParent.Size = new System.Drawing.Size(297, 200);
             this.DeletePanelParent.TabIndex = 0;
             this.DeletePanelParent.Visible = false;
             // 
@@ -1064,9 +1133,10 @@ namespace AutoClicker
             // 
             this.ConfirmDeletePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ConfirmDeletePanel.Controls.Add(this.DeletePanel);
-            this.ConfirmDeletePanel.Location = new System.Drawing.Point(3, 3);
+            this.ConfirmDeletePanel.Location = new System.Drawing.Point(2, 2);
+            this.ConfirmDeletePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ConfirmDeletePanel.Name = "ConfirmDeletePanel";
-            this.ConfirmDeletePanel.Size = new System.Drawing.Size(390, 240);
+            this.ConfirmDeletePanel.Size = new System.Drawing.Size(292, 195);
             this.ConfirmDeletePanel.TabIndex = 0;
             // 
             // DeletePanel
@@ -1075,9 +1145,10 @@ namespace AutoClicker
             this.DeletePanel.Controls.Add(this.ConfirmDeleteButton);
             this.DeletePanel.Controls.Add(this.CancelConfirmDeleteButton);
             this.DeletePanel.Controls.Add(this.ConfirmDeleteLabel);
-            this.DeletePanel.Location = new System.Drawing.Point(5, 5);
+            this.DeletePanel.Location = new System.Drawing.Point(4, 4);
+            this.DeletePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DeletePanel.Name = "DeletePanel";
-            this.DeletePanel.Size = new System.Drawing.Size(380, 230);
+            this.DeletePanel.Size = new System.Drawing.Size(285, 187);
             this.DeletePanel.TabIndex = 0;
             // 
             // ConfirmDeleteButton
@@ -1085,9 +1156,10 @@ namespace AutoClicker
             this.ConfirmDeleteButton.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.ConfirmDeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ConfirmDeleteButton.ForeColor = System.Drawing.Color.White;
-            this.ConfirmDeleteButton.Location = new System.Drawing.Point(60, 120);
+            this.ConfirmDeleteButton.Location = new System.Drawing.Point(45, 98);
+            this.ConfirmDeleteButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ConfirmDeleteButton.Name = "ConfirmDeleteButton";
-            this.ConfirmDeleteButton.Size = new System.Drawing.Size(120, 50);
+            this.ConfirmDeleteButton.Size = new System.Drawing.Size(90, 41);
             this.ConfirmDeleteButton.TabIndex = 0;
             this.ConfirmDeleteButton.TabStop = false;
             this.ConfirmDeleteButton.Text = "Confirm";
@@ -1099,9 +1171,10 @@ namespace AutoClicker
             this.CancelConfirmDeleteButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.CancelConfirmDeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelConfirmDeleteButton.ForeColor = System.Drawing.Color.White;
-            this.CancelConfirmDeleteButton.Location = new System.Drawing.Point(220, 120);
+            this.CancelConfirmDeleteButton.Location = new System.Drawing.Point(165, 98);
+            this.CancelConfirmDeleteButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CancelConfirmDeleteButton.Name = "CancelConfirmDeleteButton";
-            this.CancelConfirmDeleteButton.Size = new System.Drawing.Size(120, 50);
+            this.CancelConfirmDeleteButton.Size = new System.Drawing.Size(90, 41);
             this.CancelConfirmDeleteButton.TabIndex = 0;
             this.CancelConfirmDeleteButton.TabStop = false;
             this.CancelConfirmDeleteButton.Text = "Cancel";
@@ -1111,9 +1184,10 @@ namespace AutoClicker
             // ConfirmDeleteLabel
             // 
             this.ConfirmDeleteLabel.ForeColor = System.Drawing.Color.White;
-            this.ConfirmDeleteLabel.Location = new System.Drawing.Point(60, 40);
+            this.ConfirmDeleteLabel.Location = new System.Drawing.Point(45, 32);
+            this.ConfirmDeleteLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ConfirmDeleteLabel.Name = "ConfirmDeleteLabel";
-            this.ConfirmDeleteLabel.Size = new System.Drawing.Size(280, 40);
+            this.ConfirmDeleteLabel.Size = new System.Drawing.Size(210, 32);
             this.ConfirmDeleteLabel.TabIndex = 0;
             this.ConfirmDeleteLabel.Text = "Are you sure you want to delete this object?";
             this.ConfirmDeleteLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1140,9 +1214,10 @@ namespace AutoClicker
             this.AutoClickerPanel.Controls.Add(this.AutoClickerToHotkeysButton);
             this.AutoClickerPanel.Controls.Add(this.label4);
             this.AutoClickerPanel.Controls.Add(this.AutoClickerStatusLabel);
-            this.AutoClickerPanel.Location = new System.Drawing.Point(0, 40);
+            this.AutoClickerPanel.Location = new System.Drawing.Point(0, 32);
+            this.AutoClickerPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoClickerPanel.Name = "AutoClickerPanel";
-            this.AutoClickerPanel.Size = new System.Drawing.Size(1024, 536);
+            this.AutoClickerPanel.Size = new System.Drawing.Size(768, 436);
             this.AutoClickerPanel.TabIndex = 0;
             // 
             // AutoClickerToAutoKeyboardButton
@@ -1150,9 +1225,10 @@ namespace AutoClicker
             this.AutoClickerToAutoKeyboardButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.AutoClickerToAutoKeyboardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AutoClickerToAutoKeyboardButton.ForeColor = System.Drawing.Color.White;
-            this.AutoClickerToAutoKeyboardButton.Location = new System.Drawing.Point(450, 0);
+            this.AutoClickerToAutoKeyboardButton.Location = new System.Drawing.Point(338, 0);
+            this.AutoClickerToAutoKeyboardButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoClickerToAutoKeyboardButton.Name = "AutoClickerToAutoKeyboardButton";
-            this.AutoClickerToAutoKeyboardButton.Size = new System.Drawing.Size(150, 60);
+            this.AutoClickerToAutoKeyboardButton.Size = new System.Drawing.Size(112, 49);
             this.AutoClickerToAutoKeyboardButton.TabIndex = 0;
             this.AutoClickerToAutoKeyboardButton.TabStop = false;
             this.AutoClickerToAutoKeyboardButton.Text = "Auto Keyboard";
@@ -1169,9 +1245,10 @@ namespace AutoClicker
             this.LimitAutoClickerPanel.Controls.Add(this.LimitAutoClickerTypeMinutes);
             this.LimitAutoClickerPanel.Controls.Add(this.LimitAutoClickerTypeSeconds);
             this.LimitAutoClickerPanel.Controls.Add(this.LimitAutoClickerTextbox);
-            this.LimitAutoClickerPanel.Location = new System.Drawing.Point(574, 181);
+            this.LimitAutoClickerPanel.Location = new System.Drawing.Point(430, 147);
+            this.LimitAutoClickerPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LimitAutoClickerPanel.Name = "LimitAutoClickerPanel";
-            this.LimitAutoClickerPanel.Size = new System.Drawing.Size(380, 299);
+            this.LimitAutoClickerPanel.Size = new System.Drawing.Size(285, 243);
             this.LimitAutoClickerPanel.TabIndex = 0;
             this.LimitAutoClickerPanel.Visible = false;
             // 
@@ -1179,9 +1256,10 @@ namespace AutoClicker
             // 
             this.LimitAutoClickerProgressLabel.AutoSize = true;
             this.LimitAutoClickerProgressLabel.ForeColor = System.Drawing.Color.White;
-            this.LimitAutoClickerProgressLabel.Location = new System.Drawing.Point(25, 265);
+            this.LimitAutoClickerProgressLabel.Location = new System.Drawing.Point(19, 215);
+            this.LimitAutoClickerProgressLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LimitAutoClickerProgressLabel.Name = "LimitAutoClickerProgressLabel";
-            this.LimitAutoClickerProgressLabel.Size = new System.Drawing.Size(95, 17);
+            this.LimitAutoClickerProgressLabel.Size = new System.Drawing.Size(75, 13);
             this.LimitAutoClickerProgressLabel.TabIndex = 0;
             this.LimitAutoClickerProgressLabel.Text = "0 / 0 Seconds";
             // 
@@ -1190,9 +1268,10 @@ namespace AutoClicker
             this.LimitAutoClickerProgressTitle.AutoSize = true;
             this.LimitAutoClickerProgressTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LimitAutoClickerProgressTitle.ForeColor = System.Drawing.Color.White;
-            this.LimitAutoClickerProgressTitle.Location = new System.Drawing.Point(25, 240);
+            this.LimitAutoClickerProgressTitle.Location = new System.Drawing.Point(19, 195);
+            this.LimitAutoClickerProgressTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LimitAutoClickerProgressTitle.Name = "LimitAutoClickerProgressTitle";
-            this.LimitAutoClickerProgressTitle.Size = new System.Drawing.Size(78, 17);
+            this.LimitAutoClickerProgressTitle.Size = new System.Drawing.Size(60, 13);
             this.LimitAutoClickerProgressTitle.TabIndex = 0;
             this.LimitAutoClickerProgressTitle.Text = "Progress:";
             // 
@@ -1200,9 +1279,10 @@ namespace AutoClicker
             // 
             this.LimitAutoClickerTypeClicks.AutoSize = true;
             this.LimitAutoClickerTypeClicks.ForeColor = System.Drawing.Color.White;
-            this.LimitAutoClickerTypeClicks.Location = new System.Drawing.Point(25, 180);
+            this.LimitAutoClickerTypeClicks.Location = new System.Drawing.Point(19, 146);
+            this.LimitAutoClickerTypeClicks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LimitAutoClickerTypeClicks.Name = "LimitAutoClickerTypeClicks";
-            this.LimitAutoClickerTypeClicks.Size = new System.Drawing.Size(65, 21);
+            this.LimitAutoClickerTypeClicks.Size = new System.Drawing.Size(53, 17);
             this.LimitAutoClickerTypeClicks.TabIndex = 0;
             this.LimitAutoClickerTypeClicks.Text = "Clicks";
             this.LimitAutoClickerTypeClicks.UseVisualStyleBackColor = true;
@@ -1211,9 +1291,10 @@ namespace AutoClicker
             // 
             this.LimitAutoClickerDurationLabel.AutoSize = true;
             this.LimitAutoClickerDurationLabel.ForeColor = System.Drawing.Color.White;
-            this.LimitAutoClickerDurationLabel.Location = new System.Drawing.Point(25, 20);
+            this.LimitAutoClickerDurationLabel.Location = new System.Drawing.Point(19, 16);
+            this.LimitAutoClickerDurationLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LimitAutoClickerDurationLabel.Name = "LimitAutoClickerDurationLabel";
-            this.LimitAutoClickerDurationLabel.Size = new System.Drawing.Size(131, 17);
+            this.LimitAutoClickerDurationLabel.Size = new System.Drawing.Size(100, 13);
             this.LimitAutoClickerDurationLabel.TabIndex = 0;
             this.LimitAutoClickerDurationLabel.Text = "Run auto clicker for";
             // 
@@ -1221,9 +1302,10 @@ namespace AutoClicker
             // 
             this.LimitAutoClickerTypeHours.AutoSize = true;
             this.LimitAutoClickerTypeHours.ForeColor = System.Drawing.Color.White;
-            this.LimitAutoClickerTypeHours.Location = new System.Drawing.Point(25, 150);
+            this.LimitAutoClickerTypeHours.Location = new System.Drawing.Point(19, 122);
+            this.LimitAutoClickerTypeHours.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LimitAutoClickerTypeHours.Name = "LimitAutoClickerTypeHours";
-            this.LimitAutoClickerTypeHours.Size = new System.Drawing.Size(67, 21);
+            this.LimitAutoClickerTypeHours.Size = new System.Drawing.Size(53, 17);
             this.LimitAutoClickerTypeHours.TabIndex = 0;
             this.LimitAutoClickerTypeHours.Text = "Hours";
             this.LimitAutoClickerTypeHours.UseVisualStyleBackColor = true;
@@ -1232,9 +1314,10 @@ namespace AutoClicker
             // 
             this.LimitAutoClickerTypeMinutes.AutoSize = true;
             this.LimitAutoClickerTypeMinutes.ForeColor = System.Drawing.Color.White;
-            this.LimitAutoClickerTypeMinutes.Location = new System.Drawing.Point(25, 120);
+            this.LimitAutoClickerTypeMinutes.Location = new System.Drawing.Point(19, 98);
+            this.LimitAutoClickerTypeMinutes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LimitAutoClickerTypeMinutes.Name = "LimitAutoClickerTypeMinutes";
-            this.LimitAutoClickerTypeMinutes.Size = new System.Drawing.Size(78, 21);
+            this.LimitAutoClickerTypeMinutes.Size = new System.Drawing.Size(62, 17);
             this.LimitAutoClickerTypeMinutes.TabIndex = 0;
             this.LimitAutoClickerTypeMinutes.Text = "Minutes";
             this.LimitAutoClickerTypeMinutes.UseVisualStyleBackColor = true;
@@ -1244,9 +1327,10 @@ namespace AutoClicker
             this.LimitAutoClickerTypeSeconds.AutoSize = true;
             this.LimitAutoClickerTypeSeconds.Checked = true;
             this.LimitAutoClickerTypeSeconds.ForeColor = System.Drawing.Color.White;
-            this.LimitAutoClickerTypeSeconds.Location = new System.Drawing.Point(25, 90);
+            this.LimitAutoClickerTypeSeconds.Location = new System.Drawing.Point(19, 73);
+            this.LimitAutoClickerTypeSeconds.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LimitAutoClickerTypeSeconds.Name = "LimitAutoClickerTypeSeconds";
-            this.LimitAutoClickerTypeSeconds.Size = new System.Drawing.Size(84, 21);
+            this.LimitAutoClickerTypeSeconds.Size = new System.Drawing.Size(67, 17);
             this.LimitAutoClickerTypeSeconds.TabIndex = 0;
             this.LimitAutoClickerTypeSeconds.TabStop = true;
             this.LimitAutoClickerTypeSeconds.Text = "Seconds";
@@ -1254,9 +1338,10 @@ namespace AutoClicker
             // 
             // LimitAutoClickerTextbox
             // 
-            this.LimitAutoClickerTextbox.Location = new System.Drawing.Point(25, 50);
+            this.LimitAutoClickerTextbox.Location = new System.Drawing.Point(19, 41);
+            this.LimitAutoClickerTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LimitAutoClickerTextbox.Name = "LimitAutoClickerTextbox";
-            this.LimitAutoClickerTextbox.Size = new System.Drawing.Size(195, 22);
+            this.LimitAutoClickerTextbox.Size = new System.Drawing.Size(147, 20);
             this.LimitAutoClickerTextbox.TabIndex = 0;
             this.LimitAutoClickerTextbox.TabStop = false;
             this.LimitAutoClickerTextbox.Text = "0";
@@ -1267,9 +1352,10 @@ namespace AutoClicker
             this.AutoClickerModeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.AutoClickerModeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AutoClickerModeButton.ForeColor = System.Drawing.Color.White;
-            this.AutoClickerModeButton.Location = new System.Drawing.Point(250, 140);
+            this.AutoClickerModeButton.Location = new System.Drawing.Point(188, 114);
+            this.AutoClickerModeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoClickerModeButton.Name = "AutoClickerModeButton";
-            this.AutoClickerModeButton.Size = new System.Drawing.Size(80, 45);
+            this.AutoClickerModeButton.Size = new System.Drawing.Size(60, 37);
             this.AutoClickerModeButton.TabIndex = 0;
             this.AutoClickerModeButton.TabStop = false;
             this.AutoClickerModeButton.Text = "Change Mode";
@@ -1281,17 +1367,19 @@ namespace AutoClicker
             this.LimitAutoClickerLabel.AutoSize = true;
             this.LimitAutoClickerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.LimitAutoClickerLabel.ForeColor = System.Drawing.Color.White;
-            this.LimitAutoClickerLabel.Location = new System.Drawing.Point(598, 125);
+            this.LimitAutoClickerLabel.Location = new System.Drawing.Point(448, 102);
+            this.LimitAutoClickerLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LimitAutoClickerLabel.Name = "LimitAutoClickerLabel";
-            this.LimitAutoClickerLabel.Size = new System.Drawing.Size(155, 20);
+            this.LimitAutoClickerLabel.Size = new System.Drawing.Size(131, 17);
             this.LimitAutoClickerLabel.TabIndex = 0;
             this.LimitAutoClickerLabel.Text = "Limit auto clicker";
             // 
             // AutoClickerInputTextBox
             // 
-            this.AutoClickerInputTextBox.Location = new System.Drawing.Point(40, 150);
+            this.AutoClickerInputTextBox.Location = new System.Drawing.Point(30, 122);
+            this.AutoClickerInputTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoClickerInputTextBox.Name = "AutoClickerInputTextBox";
-            this.AutoClickerInputTextBox.Size = new System.Drawing.Size(195, 22);
+            this.AutoClickerInputTextBox.Size = new System.Drawing.Size(147, 20);
             this.AutoClickerInputTextBox.TabIndex = 0;
             this.AutoClickerInputTextBox.TabStop = false;
             this.AutoClickerInputTextBox.Validated += new System.EventHandler(this.AutoClickerInputTextBox_Validated);
@@ -1300,9 +1388,10 @@ namespace AutoClicker
             // 
             this.AutoClickerModeLabel.AutoSize = true;
             this.AutoClickerModeLabel.ForeColor = System.Drawing.Color.White;
-            this.AutoClickerModeLabel.Location = new System.Drawing.Point(40, 120);
+            this.AutoClickerModeLabel.Location = new System.Drawing.Point(30, 98);
+            this.AutoClickerModeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AutoClickerModeLabel.Name = "AutoClickerModeLabel";
-            this.AutoClickerModeLabel.Size = new System.Drawing.Size(119, 17);
+            this.AutoClickerModeLabel.Size = new System.Drawing.Size(91, 13);
             this.AutoClickerModeLabel.TabIndex = 0;
             this.AutoClickerModeLabel.Text = "Clicks per second";
             // 
@@ -1311,9 +1400,10 @@ namespace AutoClicker
             this.LimitAutoClickerButton.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.LimitAutoClickerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LimitAutoClickerButton.ForeColor = System.Drawing.Color.White;
-            this.LimitAutoClickerButton.Location = new System.Drawing.Point(800, 116);
+            this.LimitAutoClickerButton.Location = new System.Drawing.Point(600, 94);
+            this.LimitAutoClickerButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LimitAutoClickerButton.Name = "LimitAutoClickerButton";
-            this.LimitAutoClickerButton.Size = new System.Drawing.Size(120, 40);
+            this.LimitAutoClickerButton.Size = new System.Drawing.Size(90, 32);
             this.LimitAutoClickerButton.TabIndex = 0;
             this.LimitAutoClickerButton.TabStop = false;
             this.LimitAutoClickerButton.Text = "Disabled";
@@ -1331,8 +1421,9 @@ namespace AutoClicker
             this.AutoClickerToAutoClickerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AutoClickerToAutoClickerButton.ForeColor = System.Drawing.Color.White;
             this.AutoClickerToAutoClickerButton.Location = new System.Drawing.Point(0, 0);
+            this.AutoClickerToAutoClickerButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoClickerToAutoClickerButton.Name = "AutoClickerToAutoClickerButton";
-            this.AutoClickerToAutoClickerButton.Size = new System.Drawing.Size(150, 60);
+            this.AutoClickerToAutoClickerButton.Size = new System.Drawing.Size(112, 49);
             this.AutoClickerToAutoClickerButton.TabIndex = 0;
             this.AutoClickerToAutoClickerButton.TabStop = false;
             this.AutoClickerToAutoClickerButton.Text = "Auto Clicker";
@@ -1343,9 +1434,10 @@ namespace AutoClicker
             this.AutoClickerToSettingsButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.AutoClickerToSettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AutoClickerToSettingsButton.ForeColor = System.Drawing.Color.White;
-            this.AutoClickerToSettingsButton.Location = new System.Drawing.Point(600, 0);
+            this.AutoClickerToSettingsButton.Location = new System.Drawing.Point(450, 0);
+            this.AutoClickerToSettingsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoClickerToSettingsButton.Name = "AutoClickerToSettingsButton";
-            this.AutoClickerToSettingsButton.Size = new System.Drawing.Size(150, 60);
+            this.AutoClickerToSettingsButton.Size = new System.Drawing.Size(112, 49);
             this.AutoClickerToSettingsButton.TabIndex = 0;
             this.AutoClickerToSettingsButton.TabStop = false;
             this.AutoClickerToSettingsButton.Text = "Settings";
@@ -1357,9 +1449,10 @@ namespace AutoClicker
             this.ToggleAutoClickerButton.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.ToggleAutoClickerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ToggleAutoClickerButton.ForeColor = System.Drawing.Color.White;
-            this.ToggleAutoClickerButton.Location = new System.Drawing.Point(40, 220);
+            this.ToggleAutoClickerButton.Location = new System.Drawing.Point(30, 179);
+            this.ToggleAutoClickerButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ToggleAutoClickerButton.Name = "ToggleAutoClickerButton";
-            this.ToggleAutoClickerButton.Size = new System.Drawing.Size(150, 60);
+            this.ToggleAutoClickerButton.Size = new System.Drawing.Size(112, 49);
             this.ToggleAutoClickerButton.TabIndex = 0;
             this.ToggleAutoClickerButton.TabStop = false;
             this.ToggleAutoClickerButton.Text = "Start AutoClicker (Hotkey F5)";
@@ -1373,9 +1466,10 @@ namespace AutoClicker
             this.AutoClickerToMacroButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AutoClickerToMacroButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AutoClickerToMacroButton.ForeColor = System.Drawing.Color.White;
-            this.AutoClickerToMacroButton.Location = new System.Drawing.Point(150, 0);
+            this.AutoClickerToMacroButton.Location = new System.Drawing.Point(112, 0);
+            this.AutoClickerToMacroButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoClickerToMacroButton.Name = "AutoClickerToMacroButton";
-            this.AutoClickerToMacroButton.Size = new System.Drawing.Size(150, 60);
+            this.AutoClickerToMacroButton.Size = new System.Drawing.Size(112, 49);
             this.AutoClickerToMacroButton.TabIndex = 0;
             this.AutoClickerToMacroButton.TabStop = false;
             this.AutoClickerToMacroButton.Text = "Macros";
@@ -1387,9 +1481,10 @@ namespace AutoClicker
             this.AutoClickerToHotkeysButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.AutoClickerToHotkeysButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AutoClickerToHotkeysButton.ForeColor = System.Drawing.Color.White;
-            this.AutoClickerToHotkeysButton.Location = new System.Drawing.Point(300, 0);
+            this.AutoClickerToHotkeysButton.Location = new System.Drawing.Point(225, 0);
+            this.AutoClickerToHotkeysButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoClickerToHotkeysButton.Name = "AutoClickerToHotkeysButton";
-            this.AutoClickerToHotkeysButton.Size = new System.Drawing.Size(150, 60);
+            this.AutoClickerToHotkeysButton.Size = new System.Drawing.Size(112, 49);
             this.AutoClickerToHotkeysButton.TabIndex = 0;
             this.AutoClickerToHotkeysButton.TabStop = false;
             this.AutoClickerToHotkeysButton.Text = "Hotkeys";
@@ -1400,9 +1495,10 @@ namespace AutoClicker
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(40, 290);
+            this.label4.Location = new System.Drawing.Point(30, 236);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 17);
+            this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 0;
             this.label4.Text = "Status:";
             // 
@@ -1410,9 +1506,10 @@ namespace AutoClicker
             // 
             this.AutoClickerStatusLabel.AutoSize = true;
             this.AutoClickerStatusLabel.ForeColor = System.Drawing.Color.Red;
-            this.AutoClickerStatusLabel.Location = new System.Drawing.Point(90, 290);
+            this.AutoClickerStatusLabel.Location = new System.Drawing.Point(68, 236);
+            this.AutoClickerStatusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AutoClickerStatusLabel.Name = "AutoClickerStatusLabel";
-            this.AutoClickerStatusLabel.Size = new System.Drawing.Size(35, 17);
+            this.AutoClickerStatusLabel.Size = new System.Drawing.Size(27, 13);
             this.AutoClickerStatusLabel.TabIndex = 0;
             this.AutoClickerStatusLabel.Text = "OFF";
             // 
@@ -1440,9 +1537,10 @@ namespace AutoClicker
             this.AutoKeyboardPanel.Controls.Add(this.AutoKeyboardToSettingsButton);
             this.AutoKeyboardPanel.Controls.Add(this.AutoKeyboardToMacroButton);
             this.AutoKeyboardPanel.Controls.Add(this.AutoKeyboardToHotkeysButton);
-            this.AutoKeyboardPanel.Location = new System.Drawing.Point(0, 40);
+            this.AutoKeyboardPanel.Location = new System.Drawing.Point(0, 32);
+            this.AutoKeyboardPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoKeyboardPanel.Name = "AutoKeyboardPanel";
-            this.AutoKeyboardPanel.Size = new System.Drawing.Size(1024, 536);
+            this.AutoKeyboardPanel.Size = new System.Drawing.Size(768, 436);
             this.AutoKeyboardPanel.TabIndex = 0;
             this.AutoKeyboardPanel.Visible = false;
             // 
@@ -1452,18 +1550,20 @@ namespace AutoClicker
             this.AutoKeyboardGuidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(54)))));
             this.AutoKeyboardGuidePanel.Controls.Add(this.AutoKeyboardGuideLabel);
             this.AutoKeyboardGuidePanel.Controls.Add(this.AutoKeyboardGuideTitle);
-            this.AutoKeyboardGuidePanel.Location = new System.Drawing.Point(695, 110);
+            this.AutoKeyboardGuidePanel.Location = new System.Drawing.Point(521, 89);
+            this.AutoKeyboardGuidePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoKeyboardGuidePanel.Name = "AutoKeyboardGuidePanel";
-            this.AutoKeyboardGuidePanel.Size = new System.Drawing.Size(300, 330);
+            this.AutoKeyboardGuidePanel.Size = new System.Drawing.Size(225, 268);
             this.AutoKeyboardGuidePanel.TabIndex = 1;
             // 
             // AutoKeyboardGuideLabel
             // 
             this.AutoKeyboardGuideLabel.AutoSize = true;
             this.AutoKeyboardGuideLabel.ForeColor = System.Drawing.Color.Silver;
-            this.AutoKeyboardGuideLabel.Location = new System.Drawing.Point(0, 50);
+            this.AutoKeyboardGuideLabel.Location = new System.Drawing.Point(0, 41);
+            this.AutoKeyboardGuideLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AutoKeyboardGuideLabel.Name = "AutoKeyboardGuideLabel";
-            this.AutoKeyboardGuideLabel.Size = new System.Drawing.Size(269, 85);
+            this.AutoKeyboardGuideLabel.Size = new System.Drawing.Size(204, 65);
             this.AutoKeyboardGuideLabel.TabIndex = 0;
             this.AutoKeyboardGuideLabel.Text = "To send key inputs type the key you want\r\nto send into the pattern box.\r\n\r\nYou ca" +
     "n send an array of inputs by\r\nseparating the keys using the separator.";
@@ -1473,17 +1573,19 @@ namespace AutoClicker
             this.AutoKeyboardGuideTitle.AutoSize = true;
             this.AutoKeyboardGuideTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AutoKeyboardGuideTitle.ForeColor = System.Drawing.Color.White;
-            this.AutoKeyboardGuideTitle.Location = new System.Drawing.Point(0, 20);
+            this.AutoKeyboardGuideTitle.Location = new System.Drawing.Point(0, 16);
+            this.AutoKeyboardGuideTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AutoKeyboardGuideTitle.Name = "AutoKeyboardGuideTitle";
-            this.AutoKeyboardGuideTitle.Size = new System.Drawing.Size(93, 17);
+            this.AutoKeyboardGuideTitle.Size = new System.Drawing.Size(75, 13);
             this.AutoKeyboardGuideTitle.TabIndex = 0;
             this.AutoKeyboardGuideTitle.Text = "How to use:";
             // 
             // AutoKeyboardPatternSeparatorTextbox
             // 
-            this.AutoKeyboardPatternSeparatorTextbox.Location = new System.Drawing.Point(280, 250);
+            this.AutoKeyboardPatternSeparatorTextbox.Location = new System.Drawing.Point(210, 203);
+            this.AutoKeyboardPatternSeparatorTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoKeyboardPatternSeparatorTextbox.Name = "AutoKeyboardPatternSeparatorTextbox";
-            this.AutoKeyboardPatternSeparatorTextbox.Size = new System.Drawing.Size(68, 22);
+            this.AutoKeyboardPatternSeparatorTextbox.Size = new System.Drawing.Size(52, 20);
             this.AutoKeyboardPatternSeparatorTextbox.TabIndex = 0;
             this.AutoKeyboardPatternSeparatorTextbox.TabStop = false;
             this.AutoKeyboardPatternSeparatorTextbox.Text = ",";
@@ -1492,9 +1594,10 @@ namespace AutoClicker
             // 
             this.AutoKeyboardPatternSeparatorLabel.AutoSize = true;
             this.AutoKeyboardPatternSeparatorLabel.ForeColor = System.Drawing.Color.White;
-            this.AutoKeyboardPatternSeparatorLabel.Location = new System.Drawing.Point(280, 220);
+            this.AutoKeyboardPatternSeparatorLabel.Location = new System.Drawing.Point(210, 179);
+            this.AutoKeyboardPatternSeparatorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AutoKeyboardPatternSeparatorLabel.Name = "AutoKeyboardPatternSeparatorLabel";
-            this.AutoKeyboardPatternSeparatorLabel.Size = new System.Drawing.Size(71, 17);
+            this.AutoKeyboardPatternSeparatorLabel.Size = new System.Drawing.Size(53, 13);
             this.AutoKeyboardPatternSeparatorLabel.TabIndex = 0;
             this.AutoKeyboardPatternSeparatorLabel.Text = "Separator";
             // 
@@ -1502,18 +1605,20 @@ namespace AutoClicker
             // 
             this.AutoKeyboardPatternLabel.AutoSize = true;
             this.AutoKeyboardPatternLabel.ForeColor = System.Drawing.Color.White;
-            this.AutoKeyboardPatternLabel.Location = new System.Drawing.Point(40, 220);
+            this.AutoKeyboardPatternLabel.Location = new System.Drawing.Point(30, 179);
+            this.AutoKeyboardPatternLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AutoKeyboardPatternLabel.Name = "AutoKeyboardPatternLabel";
-            this.AutoKeyboardPatternLabel.Size = new System.Drawing.Size(54, 17);
+            this.AutoKeyboardPatternLabel.Size = new System.Drawing.Size(41, 13);
             this.AutoKeyboardPatternLabel.TabIndex = 0;
             this.AutoKeyboardPatternLabel.Text = "Pattern";
             // 
             // AutoKeyboardPatternTextbox
             // 
-            this.AutoKeyboardPatternTextbox.Location = new System.Drawing.Point(40, 250);
+            this.AutoKeyboardPatternTextbox.Location = new System.Drawing.Point(30, 203);
+            this.AutoKeyboardPatternTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoKeyboardPatternTextbox.Multiline = true;
             this.AutoKeyboardPatternTextbox.Name = "AutoKeyboardPatternTextbox";
-            this.AutoKeyboardPatternTextbox.Size = new System.Drawing.Size(190, 95);
+            this.AutoKeyboardPatternTextbox.Size = new System.Drawing.Size(144, 78);
             this.AutoKeyboardPatternTextbox.TabIndex = 0;
             this.AutoKeyboardPatternTextbox.TabStop = false;
             this.AutoKeyboardPatternTextbox.Validated += new System.EventHandler(this.AutoKeyboardPatternTextbox_Validated);
@@ -1523,9 +1628,10 @@ namespace AutoClicker
             this.AutoKeyboardModeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.AutoKeyboardModeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AutoKeyboardModeButton.ForeColor = System.Drawing.Color.White;
-            this.AutoKeyboardModeButton.Location = new System.Drawing.Point(250, 140);
+            this.AutoKeyboardModeButton.Location = new System.Drawing.Point(188, 114);
+            this.AutoKeyboardModeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoKeyboardModeButton.Name = "AutoKeyboardModeButton";
-            this.AutoKeyboardModeButton.Size = new System.Drawing.Size(80, 45);
+            this.AutoKeyboardModeButton.Size = new System.Drawing.Size(60, 37);
             this.AutoKeyboardModeButton.TabIndex = 0;
             this.AutoKeyboardModeButton.TabStop = false;
             this.AutoKeyboardModeButton.Text = "Change Mode";
@@ -1534,9 +1640,10 @@ namespace AutoClicker
             // 
             // AutoKeyboardInputTextBox
             // 
-            this.AutoKeyboardInputTextBox.Location = new System.Drawing.Point(40, 150);
+            this.AutoKeyboardInputTextBox.Location = new System.Drawing.Point(30, 122);
+            this.AutoKeyboardInputTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoKeyboardInputTextBox.Name = "AutoKeyboardInputTextBox";
-            this.AutoKeyboardInputTextBox.Size = new System.Drawing.Size(195, 22);
+            this.AutoKeyboardInputTextBox.Size = new System.Drawing.Size(147, 20);
             this.AutoKeyboardInputTextBox.TabIndex = 0;
             this.AutoKeyboardInputTextBox.TabStop = false;
             this.AutoKeyboardInputTextBox.Validated += new System.EventHandler(this.AutoKeyboardInputTextBox_Validated);
@@ -1545,9 +1652,10 @@ namespace AutoClicker
             // 
             this.AutoKeyboardModeLabel.AutoSize = true;
             this.AutoKeyboardModeLabel.ForeColor = System.Drawing.Color.White;
-            this.AutoKeyboardModeLabel.Location = new System.Drawing.Point(40, 120);
+            this.AutoKeyboardModeLabel.Location = new System.Drawing.Point(30, 98);
+            this.AutoKeyboardModeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AutoKeyboardModeLabel.Name = "AutoKeyboardModeLabel";
-            this.AutoKeyboardModeLabel.Size = new System.Drawing.Size(121, 17);
+            this.AutoKeyboardModeLabel.Size = new System.Drawing.Size(92, 13);
             this.AutoKeyboardModeLabel.TabIndex = 0;
             this.AutoKeyboardModeLabel.Text = "Inputs per second";
             // 
@@ -1556,9 +1664,10 @@ namespace AutoClicker
             this.ToggleAutoKeyboardButton.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.ToggleAutoKeyboardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ToggleAutoKeyboardButton.ForeColor = System.Drawing.Color.White;
-            this.ToggleAutoKeyboardButton.Location = new System.Drawing.Point(40, 370);
+            this.ToggleAutoKeyboardButton.Location = new System.Drawing.Point(30, 301);
+            this.ToggleAutoKeyboardButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ToggleAutoKeyboardButton.Name = "ToggleAutoKeyboardButton";
-            this.ToggleAutoKeyboardButton.Size = new System.Drawing.Size(150, 60);
+            this.ToggleAutoKeyboardButton.Size = new System.Drawing.Size(112, 49);
             this.ToggleAutoKeyboardButton.TabIndex = 0;
             this.ToggleAutoKeyboardButton.TabStop = false;
             this.ToggleAutoKeyboardButton.Text = "Start AutoKeyboard (Hotkey F5)";
@@ -1569,9 +1678,10 @@ namespace AutoClicker
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(40, 440);
+            this.label5.Location = new System.Drawing.Point(30, 358);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 17);
+            this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 0;
             this.label5.Text = "Status:";
             // 
@@ -1579,9 +1689,10 @@ namespace AutoClicker
             // 
             this.AutoKeyboardStatusLabel.AutoSize = true;
             this.AutoKeyboardStatusLabel.ForeColor = System.Drawing.Color.Red;
-            this.AutoKeyboardStatusLabel.Location = new System.Drawing.Point(90, 440);
+            this.AutoKeyboardStatusLabel.Location = new System.Drawing.Point(68, 358);
+            this.AutoKeyboardStatusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AutoKeyboardStatusLabel.Name = "AutoKeyboardStatusLabel";
-            this.AutoKeyboardStatusLabel.Size = new System.Drawing.Size(35, 17);
+            this.AutoKeyboardStatusLabel.Size = new System.Drawing.Size(27, 13);
             this.AutoKeyboardStatusLabel.TabIndex = 0;
             this.AutoKeyboardStatusLabel.Text = "OFF";
             // 
@@ -1591,8 +1702,9 @@ namespace AutoClicker
             this.AutoKeyboardToAutoClickerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AutoKeyboardToAutoClickerButton.ForeColor = System.Drawing.Color.White;
             this.AutoKeyboardToAutoClickerButton.Location = new System.Drawing.Point(0, 0);
+            this.AutoKeyboardToAutoClickerButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoKeyboardToAutoClickerButton.Name = "AutoKeyboardToAutoClickerButton";
-            this.AutoKeyboardToAutoClickerButton.Size = new System.Drawing.Size(150, 60);
+            this.AutoKeyboardToAutoClickerButton.Size = new System.Drawing.Size(112, 49);
             this.AutoKeyboardToAutoClickerButton.TabIndex = 0;
             this.AutoKeyboardToAutoClickerButton.TabStop = false;
             this.AutoKeyboardToAutoClickerButton.Text = "Auto Clicker";
@@ -1609,9 +1721,10 @@ namespace AutoClicker
             this.AutoKeyboardToAutoKeyboardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AutoKeyboardToAutoKeyboardButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AutoKeyboardToAutoKeyboardButton.ForeColor = System.Drawing.Color.White;
-            this.AutoKeyboardToAutoKeyboardButton.Location = new System.Drawing.Point(450, 0);
+            this.AutoKeyboardToAutoKeyboardButton.Location = new System.Drawing.Point(338, 0);
+            this.AutoKeyboardToAutoKeyboardButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoKeyboardToAutoKeyboardButton.Name = "AutoKeyboardToAutoKeyboardButton";
-            this.AutoKeyboardToAutoKeyboardButton.Size = new System.Drawing.Size(150, 60);
+            this.AutoKeyboardToAutoKeyboardButton.Size = new System.Drawing.Size(112, 49);
             this.AutoKeyboardToAutoKeyboardButton.TabIndex = 0;
             this.AutoKeyboardToAutoKeyboardButton.TabStop = false;
             this.AutoKeyboardToAutoKeyboardButton.Text = "Auto Keyboard";
@@ -1622,9 +1735,10 @@ namespace AutoClicker
             this.AutoKeyboardToSettingsButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.AutoKeyboardToSettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AutoKeyboardToSettingsButton.ForeColor = System.Drawing.Color.White;
-            this.AutoKeyboardToSettingsButton.Location = new System.Drawing.Point(600, 0);
+            this.AutoKeyboardToSettingsButton.Location = new System.Drawing.Point(450, 0);
+            this.AutoKeyboardToSettingsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoKeyboardToSettingsButton.Name = "AutoKeyboardToSettingsButton";
-            this.AutoKeyboardToSettingsButton.Size = new System.Drawing.Size(150, 60);
+            this.AutoKeyboardToSettingsButton.Size = new System.Drawing.Size(112, 49);
             this.AutoKeyboardToSettingsButton.TabIndex = 0;
             this.AutoKeyboardToSettingsButton.TabStop = false;
             this.AutoKeyboardToSettingsButton.Text = "Settings";
@@ -1638,9 +1752,10 @@ namespace AutoClicker
             this.AutoKeyboardToMacroButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AutoKeyboardToMacroButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AutoKeyboardToMacroButton.ForeColor = System.Drawing.Color.White;
-            this.AutoKeyboardToMacroButton.Location = new System.Drawing.Point(150, 0);
+            this.AutoKeyboardToMacroButton.Location = new System.Drawing.Point(112, 0);
+            this.AutoKeyboardToMacroButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoKeyboardToMacroButton.Name = "AutoKeyboardToMacroButton";
-            this.AutoKeyboardToMacroButton.Size = new System.Drawing.Size(150, 60);
+            this.AutoKeyboardToMacroButton.Size = new System.Drawing.Size(112, 49);
             this.AutoKeyboardToMacroButton.TabIndex = 0;
             this.AutoKeyboardToMacroButton.TabStop = false;
             this.AutoKeyboardToMacroButton.Text = "Macros";
@@ -1652,9 +1767,10 @@ namespace AutoClicker
             this.AutoKeyboardToHotkeysButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.AutoKeyboardToHotkeysButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AutoKeyboardToHotkeysButton.ForeColor = System.Drawing.Color.White;
-            this.AutoKeyboardToHotkeysButton.Location = new System.Drawing.Point(300, 0);
+            this.AutoKeyboardToHotkeysButton.Location = new System.Drawing.Point(225, 0);
+            this.AutoKeyboardToHotkeysButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AutoKeyboardToHotkeysButton.Name = "AutoKeyboardToHotkeysButton";
-            this.AutoKeyboardToHotkeysButton.Size = new System.Drawing.Size(150, 60);
+            this.AutoKeyboardToHotkeysButton.Size = new System.Drawing.Size(112, 49);
             this.AutoKeyboardToHotkeysButton.TabIndex = 0;
             this.AutoKeyboardToHotkeysButton.TabStop = false;
             this.AutoKeyboardToHotkeysButton.Text = "Hotkeys";
@@ -1668,10 +1784,10 @@ namespace AutoClicker
             // 
             // AutoClickerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.ClientSize = new System.Drawing.Size(1024, 576);
+            this.ClientSize = new System.Drawing.Size(768, 468);
             this.Controls.Add(this.ApplicationTitle);
             this.Controls.Add(this.MinimizeApplicationButton);
             this.Controls.Add(this.CloseApplicationButton);
@@ -1683,6 +1799,7 @@ namespace AutoClicker
             this.Controls.Add(this.AutoKeyboardPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AutoClickerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Auto Clicker";

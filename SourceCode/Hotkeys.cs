@@ -79,10 +79,6 @@ namespace AutoClicker
         private void EnableHotkeysUIButtons(bool enable)
         {
             SaveHotkeysButton.Enabled = enable;
-            HotkeysToMacroButton.Enabled = enable;
-            HotkeysToSettingsButton.Enabled = enable;
-            HotkeysToAutoClickerButton.Enabled = enable;
-            HotkeysToAutoKeyboardButton.Enabled = enable;
 
             foreach (var deleteHotkeyButton in deleteHotkeyButtons)
             {
