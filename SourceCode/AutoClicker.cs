@@ -201,44 +201,6 @@ namespace AutoClicker
 
         private void AutoClickerTimer_Tick(object sender, EventArgs e)
         {
-            if (limitAutoClicker && (AutoClickerTimer.Interval != 999 || AutoClickerInputTextBox.Text == "1"))
-            {
-                if (!LimitAutoClickerTypeClicks.Checked)
-                {
-                    if (autoClickerDelayMode)
-                    {
-                        autoClickerActiveTime += float.Parse(AutoClickerInputTextBox.Text);
-                    }
-                    else
-                    {
-                        autoClickerActiveTime += 1 / float.Parse(AutoClickerInputTextBox.Text);
-                    }
-                }
-
-                if (LimitAutoClickerTypeClicks.Checked)
-                {
-                    LimitAutoClickerProgressLabel.Text = autoClickerActiveTime + " / " + limitAutoClickerTime + " clicks";
-                }
-                else if (LimitAutoClickerTypeSeconds.Checked)
-                {
-                    LimitAutoClickerProgressLabel.Text = Math.Floor(autoClickerActiveTime) + " / " + limitAutoClickerTime + " seconds";
-                }
-                else if (LimitAutoClickerTypeMinutes.Checked)
-                {
-                    LimitAutoClickerProgressLabel.Text = Math.Floor(autoClickerActiveTime / 60) + " / " + limitAutoClickerTime / 60 + " minutes";
-                }
-                else if (LimitAutoClickerTypeHours.Checked)
-                {
-                    LimitAutoClickerProgressLabel.Text = Math.Floor(autoClickerActiveTime / 3600) + " / " + limitAutoClickerTime / 3600 + " hours";
-                }
-
-                if (limitAutoClickerTime <= autoClickerActiveTime)
-                {
-                    StopAutoClicker();
-                    return;
-                }
-            }
-
             if (autoClickerClickWhileMoving)
             {
                 if (AutoClickerDelayCounter <= 0)
@@ -296,6 +258,44 @@ namespace AutoClicker
                 {
                     mouseLastPosition = new int[] { Cursor.Position.X, Cursor.Position.Y };
                     AutoClickerTimer.Interval = 999;
+                }
+            }
+
+            if (limitAutoClicker && (AutoClickerTimer.Interval != 999 || AutoClickerInputTextBox.Text == "1"))
+            {
+                if (!LimitAutoClickerTypeClicks.Checked)
+                {
+                    if (autoClickerDelayMode)
+                    {
+                        autoClickerActiveTime += float.Parse(AutoClickerInputTextBox.Text);
+                    }
+                    else
+                    {
+                        autoClickerActiveTime += 1 / float.Parse(AutoClickerInputTextBox.Text);
+                    }
+                }
+
+                if (LimitAutoClickerTypeClicks.Checked)
+                {
+                    LimitAutoClickerProgressLabel.Text = autoClickerActiveTime + " / " + limitAutoClickerTime + " clicks";
+                }
+                else if (LimitAutoClickerTypeSeconds.Checked)
+                {
+                    LimitAutoClickerProgressLabel.Text = Math.Floor(autoClickerActiveTime) + " / " + limitAutoClickerTime + " seconds";
+                }
+                else if (LimitAutoClickerTypeMinutes.Checked)
+                {
+                    LimitAutoClickerProgressLabel.Text = Math.Floor(autoClickerActiveTime) + " / " + limitAutoClickerTime + " seconds (" + limitAutoClickerTime / 60 + " minutes)";
+                }
+                else if (LimitAutoClickerTypeHours.Checked)
+                {
+                    LimitAutoClickerProgressLabel.Text = Math.Floor(autoClickerActiveTime) + " / " + limitAutoClickerTime + " seconds (" + limitAutoClickerTime / 3600 + " hours)";
+                }
+
+                if (limitAutoClickerTime <= autoClickerActiveTime)
+                {
+                    StopAutoClicker();
+                    return;
                 }
             }
         }
