@@ -9,7 +9,8 @@ namespace AutoClicker
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
         private static extern IntPtr SetWindowsHookEx(int idHook, LowLevelMouseProc lpfn, IntPtr hMod, uint dwThreadId);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)][return: MarshalAs(UnmanagedType.Bool)]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool UnhookWindowsHookEx(IntPtr hhk);
 
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
@@ -24,9 +25,10 @@ namespace AutoClicker
         [DllImport("user32.dll")]
         private static extern void mouse_event(int dwFlags, int dx, int dy, int cButtons, int dwExtraInfo);
 
-        private static LowLevelMouseProc mouseProc = HookCallback;
+        private static readonly LowLevelMouseProc MouseProc = HookCallback;
         private delegate IntPtr LowLevelMouseProc(int nCode, IntPtr wParam, IntPtr lParam);
         private static IntPtr hookID = IntPtr.Zero;
+        
         private const int MOUSE_EVENT_LEFT_DOWN = 0x02;
         private const int MOUSE_EVENT_LEFT_UP = 0x04;
         private const int MOUSE_EVENT_RIGHT_DOWN = 0x08;
@@ -59,28 +61,24 @@ namespace AutoClicker
             public uint time;
         }
 
-
         private static IntPtr SetHook(LowLevelMouseProc proc)
         {
-            using (Process currentProcess = Process.GetCurrentProcess())
-            using (ProcessModule currentModule = currentProcess.MainModule)
+            using (var currentProcess = Process.GetCurrentProcess())
+            using (var currentModule = currentProcess.MainModule)
             {
                 return SetWindowsHookEx(14, proc, GetModuleHandle(currentModule.ModuleName), 0);
             }
         }
 
-
         private void ActivateMouseHook()
         {
-            hookID = SetHook(mouseProc);
+            hookID = SetHook(MouseProc);
         }
-
 
         private void DeactivateMouseHook()
         {
             UnhookWindowsHookEx(hookID);
         }
-
 
         private static IntPtr HookCallback(int nCode, IntPtr wParam, IntPtr lParam)
         {
@@ -105,19 +103,16 @@ namespace AutoClicker
             return CallNextHookEx(hookID, nCode, wParam, lParam);
         }
 
-
         private void MoveMouseToPosition(int x, int y)
         {
             SetCursorPos(x, y);
         }
-
 
         private void LeftMouseClick(int x, int y)
         {
             mouse_event(MOUSE_EVENT_LEFT_DOWN, x, y, 0, 0);
             mouse_event(MOUSE_EVENT_LEFT_UP, x, y, 0, 0);
         }
-
 
         private void RightMouseClick(int x, int y)
         {

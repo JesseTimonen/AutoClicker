@@ -6,19 +6,30 @@ namespace AutoClicker
 {
     public partial class AutoClickerForm
     {
-        [DllImportAttribute("user32.dll")] private static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-        [DllImportAttribute("user32.dll")] private static extern bool ReleaseCapture();
-        private const int WM_NCLBUTTONDOWN = 0xA1;
-        private const int HT_CAPTION = 0x2;
+        // Import necessary user32.dll methods for dragging functionality
+        [DllImport("user32.dll")] private static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImport("user32.dll")] private static extern bool ReleaseCapture();
+
+        // Handle the MouseDown event for dragging the form
+        private void MoveHandler(MouseEventArgs args)
+        {
+            // Allows you to drag the application by holding down left mouse button
+            if (args.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, 0xA1, 0x2, 0);
+            }
+        }
 
         // Allows you to drag the application my holding down left mouse button
         private void MacroManagerForm_MouseDown(object sender, MouseEventArgs args)
         {
-            if (args.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
+            MoveHandler(args);
+        }
+
+        private void ApplicationTitle_MouseDown(object sender, MouseEventArgs args)
+        {
+            MoveHandler(args);
         }
     }
 }

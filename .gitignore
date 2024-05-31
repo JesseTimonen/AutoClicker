@@ -1,3 +1,6 @@
 SourceCode/bin
 SourceCode/obj
 SourceCode/.vs
+SourceCode/.vscode
+.vs
+.vscode
